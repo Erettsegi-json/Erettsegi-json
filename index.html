@@ -89,25 +89,25 @@ function setSelects(erettsegiJSON) {
         levels.add(erettsegiJSON[i].level);
         subjects.add(erettsegiJSON[i].subject);
     }
-    
-    times = Array.from(times).sort();
+
+    times = Array.from(times).sort().reverse();
     levels = Array.from(levels);
     subjects = Array.from(subjects).sort();
     subjects = subjects.filter(subject => !frequentSubjects.has(subject));
     subjects = Array.from(frequentSubjects).concat(subjects);
-    
+
     timeSelect.addEventListener('change', function() {
         refresh(erettsegiJSON);
     });
-    
+
     subjectSelect.addEventListener('change', function() {
         refresh(erettsegiJSON);
     });
-    
+
     levelSelect.addEventListener('change', function() {
         refresh(erettsegiJSON);
     });
-    
+
     times.unshift("Bármikor");
     for (let time of times) {
         timeSelect.options.add(new Option(time, time));
