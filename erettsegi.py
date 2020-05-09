@@ -51,6 +51,7 @@ def getErettsegik(path):
 
     return links
 
+blacklist = ['2012', '2011', '2010', '2009', '2008', '2007', '2006', '2005']
 
 def main():
     okatas_response = requests.get('https://www.oktatas.hu/kozneveles/erettsegi/feladatsorok')
@@ -70,14 +71,14 @@ def main():
             if not link.endswith('.pdf'):
                 erettsegik = getErettsegikPdf(link)
                 for subject in erettsegik:
-                    if subject.strip() != '':
+                    if (subject.strip() != '') and (time[:4] not in blacklist):
                         erettsegi_list.append(Erettsegi(time, 'közép', subject, erettsegik[subject]))
 
         for link in erettsegi_linkek_emelt:
             if not link.endswith('.pdf'):
                 erettsegik = getErettsegikPdf(link)
                 for subject in erettsegik:
-                    if subject.strip() != '':
+                    if (subject.strip() != '') and (time[:4] not in blacklist):
                         erettsegi_list.append(Erettsegi(time, 'emelt', subject, erettsegik[subject]))
 
         n += 1
