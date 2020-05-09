@@ -35,7 +35,7 @@ let timeSelect = document.getElementById("time");
 let levelSelect = document.getElementById("level");
 let subjectSelect = document.getElementById("subject");
 let resdiv = document.getElementById("results");
-
+let frequentSubjects = new Set(["angol nyelv", "biológia", "filozófia", "fizika", "földrajz", "informatika", "kémia", "magyar nyelv és irodalom", "matematika", "német nyelv", "rajz és vizuális kultúra", "spanyol nyelv", "történelem", "ének-zene"]);
 let requestURL = 'https://raw.githubusercontent.com/Erettsegi-json/Erettsegi-json/master/erettsegi.json';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
@@ -74,6 +74,8 @@ function refresh(erettsegiJSON) {
             timeParagraph.innerHTML = erettsegiJSON[i].time;
             card.appendChild(timeParagraph);
             resdiv.appendChild(card);
+            if (resultsNumber > 100)
+                break;
         }
     }
     if (resultsNumber === 0) {
@@ -91,6 +93,8 @@ function setSelects(erettsegiJSON) {
     times = Array.from(times).sort();
     levels = Array.from(levels);
     subjects = Array.from(subjects).sort();
+    subjects = subjects.filter(subject => !frequentSubjects.has(subject));
+    subjects = Array.from(frequentSubjects).concat(subjects);
     
     timeSelect.addEventListener('change', function() {
         refresh(erettsegiJSON);
