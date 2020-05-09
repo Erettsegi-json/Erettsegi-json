@@ -45,6 +45,17 @@ request.onload = function() {
     const erettsegiResponse = request.response;
     const erettsegiJSON = JSON.parse(erettsegiResponse);
     setSelects(erettsegiJSON);
+    loadSettings();
+}
+
+function loadSettings() {
+    var url = new URL(window.location.href);
+    if (url.searchParams.has("time"))
+        timeSelect.value = url.searchParams.get("time");
+    if (url.searchParams.has("level"))
+        levelSelect.value = url.searchParams.get("level");
+    if (url.searchParams.has("subject"))
+        subjectSelect.value = url.searchParams.get("subject");
 }
 
 function refresh(erettsegiJSON) {

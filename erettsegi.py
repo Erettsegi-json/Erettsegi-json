@@ -2,6 +2,11 @@ import bs4
 import requests
 import json
 from time import sleep
+import re
+
+
+def clear_tags(s):
+    return re.sub(r"<[\w/]*>", "", s)
 
 
 class Erettsegi:
@@ -28,18 +33,13 @@ def getErettsegikPdf(path):
         for row in table.tbody.findAll('tr'):
             if list(row.td.children):
                 if not row.td.find_all('a'):
-                    if 'Vizsgatárgy' not in subject:
-                        subject_dict[subject] = links.copy()
-                    if type(list(row.td.children)[0]) == bs4.element.NavigableString:
-                        subject = str(list(row.td.children)[0])
-                    else:
-                        if list(list(row.td.children)[0].children):
-                            subject = str(list(list(row.td.children)[0].children)[0])
-                        else:
-                            subject = str(list(row.td.children)[0])
+                    if clear_tags(str(list(row.td.children)[0])).strip() != "":
+                        if 'Vizsgatárgy' not in subject:
+                            subject_dict[subject] = links.copy()
+                        subject = clear_tags(str(list(row.td.children)[0])).strip()
 
-                    links.clear()
-                    links += [link['href'] for link in row.find_all('a')]
+                        links.clear()
+                        links += [link['href'] for link in row.find_all('a')]
                 else:
                     if 'Vizsgatárgy' not in subject:
                         links += [link['href'] for link in row.find_all('a')]
