@@ -79,3 +79,12 @@ a {
     text-align-last: center;
     margin: 0px;
 }
+
+footer {
+    margin-top: 70px;
+    text-align: center;
+}
+
+footer * {
+    display: inline;
+}
