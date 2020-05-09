@@ -30,7 +30,7 @@
 <script>
 let times = new Set();
 let levels = new Set();
-let subjects = new Set();    
+let subjects = new Set();
 let timeSelect = document.getElementById("time");
 let levelSelect = document.getElementById("level");
 let subjectSelect = document.getElementById("subject");
@@ -60,12 +60,28 @@ function refresh(erettsegiJSON) {
             titleParagraph.className = "title";
             titleParagraph.innerHTML = erettsegiJSON[i].level + " " + erettsegiJSON[i].subject;
             card.appendChild(titleParagraph);
+            
+            var tbl = document.createElement('table');
+            tbl.setAttribute('border', '0');
+            var tbdy = document.createElement('tbody');
+            var tr = document.createElement('tr');
+            var left = document.createElement('td');
+            var right = document.createElement('td');
+            tbdy.appendChild(left);
+            tbdy.appendChild(right);
+            tbl.appendChild(tbdy);
+            card.appendChild(tbl)
+
             for (let link of erettsegiJSON[i].links){
                 var linkElement = document.createElement("a");
                 var linkParagraph = document.createElement("p");
                 linkParagraph.className = "link";
                 linkParagraph.appendChild(linkElement);
-                card.appendChild(linkParagraph);
+                console.log(link.substring(link.lastIndexOf(".")-2, link.lastIndexOf(".")));
+                if (link.substring(link.lastIndexOf(".")-2, link.lastIndexOf(".")) === "fl")
+                    left.appendChild(linkParagraph);
+                else
+                    right.appendChild(linkParagraph);
                 linkElement.href = "http://oktatas.hu" + link;
                 linkElement.innerHTML = link.substring(link.lastIndexOf("/")+1);
             }
