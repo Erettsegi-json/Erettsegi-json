@@ -23,7 +23,7 @@ class Erettsegi:
 
 
 def clear_tags(s):
-    return re.sub(r"<[\w/=;\"\-#:\s]*>", "", s)
+    return re.sub(r"<[\w/=;\"\-#:\s_\.]*>", "", s)
 
 
 def getErettsegikPdf(path):
@@ -39,6 +39,13 @@ def getErettsegikPdf(path):
         for row in table.tbody.findAll('tr'):
             if list(row.td.children):
                 if not row.td.find_all('a'):
+                    if clear_tags(str(''.join([str(e) for e in row.td.children])).strip()).strip() != "":
+                        if ('Vizsgatárgy' not in subject) and links:
+                            subject_dict[subject] = links.copy()
+                        subject = clear_tags(str(''.join([str(e) for e in row.td.children])).strip()).strip()
+                        links.clear()
+                        links += [link['href'] for link in row.find_all('a')]
+                elif row.td.find('a').text == '':
                     if clear_tags(str(''.join([str(e) for e in row.td.children])).strip()).strip() != "":
                         if ('Vizsgatárgy' not in subject) and links:
                             subject_dict[subject] = links.copy()
@@ -111,6 +118,7 @@ def main():
 
 
 if __name__ == '__main__':
+    #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/emelt_szint_2017tavasz/emelt_7nap')
     #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2018tavasz/kozep_9nap')
     #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2019osz/kozep_10nap')
     #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/emelt_szint_2019osz/emelt_5nap')
