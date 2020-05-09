@@ -22,6 +22,7 @@ select {
 }
 
 #results {
+    margin-top: 30px;
     text-align: center;
 }
 
@@ -30,6 +31,8 @@ select {
     text-align: start;
     width: 100%;
     padding: 5px;
+    margin: 0px;
+    font-size: 23px;
 }
 
 .card {
@@ -40,9 +43,10 @@ select {
 }
 
 .time {
-    color: #121212;
+    color: #01579B;
     text-align: end;
     padding: 5px;
+    padding-right: 8px;
 }
 
 #selects {
@@ -54,12 +58,8 @@ select {
     #selects {
         width: 80%;
     }
-    #results {
-        width: 100%;
-    }
-
     #results div {
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -72,4 +72,5 @@ a {
 
 .link {
     text-align-last: center;
+    margin: 0px;
 }
