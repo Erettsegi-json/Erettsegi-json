@@ -27,12 +27,23 @@ def getErettsegikPdf(path):
         links = list()
         for row in table.tbody.findAll('tr'):
             if list(row.td.children):
-                if type(list(row.td.children)[0]) == bs4.element.NavigableString:
-                    if subject != 'Vizsgatárgy':
-                        subject_dict[subject] = links
-                    subject = str(list(row.td.children)[0])
-                    links = [link['href'] for link in row.find_all('a')]
-        if subject != 'Vizsgatárgy':
+                if not row.td.find_all('a'):
+                    if 'Vizsgatárgy' not in subject:
+                        subject_dict[subject] = links.copy()
+                    if type(list(row.td.children)[0]) == bs4.element.NavigableString:
+                        subject = str(list(row.td.children)[0])
+                    else:
+                        if list(list(row.td.children)[0].children):
+                            subject = str(list(list(row.td.children)[0].children)[0])
+                        else:
+                            subject = str(list(row.td.children)[0])
+
+                    links.clear()
+                    links += [link['href'] for link in row.find_all('a')]
+                else:
+                    if 'Vizsgatárgy' not in subject:
+                        links += [link['href'] for link in row.find_all('a')]
+        if 'Vizsgatárgy' not in subject:
             subject_dict[subject] = links
     return subject_dict
 
@@ -51,7 +62,9 @@ def getErettsegik(path):
 
     return links
 
+
 blacklist = ['2012', '2011', '2010', '2009', '2008', '2007', '2006', '2005']
+
 
 def main():
     okatas_response = requests.get('https://www.oktatas.hu/kozneveles/erettsegi/feladatsorok')
@@ -87,4 +100,6 @@ def main():
 
 
 if __name__ == '__main__':
+    #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2019osz/kozep_10nap')
+    #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/emelt_szint_2019osz/emelt_5nap')
     main()
