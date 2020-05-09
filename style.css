@@ -11,6 +11,11 @@ h1 {
     text-align: center;
 }
 
+#description {
+    text-align: center;
+    margin: 0px;
+}
+
 select {
     display: block;
     margin-top: 16px;

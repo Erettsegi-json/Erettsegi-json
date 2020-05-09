@@ -5,21 +5,20 @@
 <meta name="description" content="">
 <meta name="author" content="Boa">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Érettségi</title>
+<title>Érettségi kereső</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-<h1>Érettségi</h1>
+<h1>Érettségi kereső</h1>
+<p id="description">mert az oktatas.hu nem embereknek készült</p>
 
 <div id="selects">
 <select id="time"></select>
 <select id="level"></select>
 <select id="subject"></select>
 </div>
-<div id="results">
 
-</div>
+<div id="results"></div>
 </body>
 <script>
 let times = new Set();
@@ -44,9 +43,10 @@ request.onload = function() {
 function refresh(erettsegiJSON) {
     let results = Array();
     resdiv.innerHTML = '';
-
+    let results_number = 0;
     for (i = 0; i < erettsegiJSON.length; i++){
         if (("Bármikor" === times[timeSelect.selectedIndex] || erettsegiJSON[i].time === times[timeSelect.selectedIndex]) && ("Bármelyik szint" === levels[levelSelect.selectedIndex] || erettsegiJSON[i].level === levels[levelSelect.selectedIndex]) && ("Bármelyik tárgy" === subjects[subjectSelect.selectedIndex] || erettsegiJSON[i].subject === subjects[subjectSelect.selectedIndex])) {
+            results_number++;
             var card = document.createElement("div");
             card.className = "card";
             var titleParagraph = document.createElement("p");
@@ -69,6 +69,9 @@ function refresh(erettsegiJSON) {
             resdiv.appendChild(card);
         }
     }
+    if (results_number === 0) {
+        resdiv.innerHTML = '<p>Nincs találat</p>';
+    }
 }
 
 function setSelects(erettsegiJSON) {
@@ -85,7 +88,6 @@ function setSelects(erettsegiJSON) {
     timeSelect.addEventListener('change', function() {
         refresh(erettsegiJSON);
     });
-    
     
     subjectSelect.addEventListener('change', function() {
         refresh(erettsegiJSON);
