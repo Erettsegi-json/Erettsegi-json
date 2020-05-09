@@ -13,18 +13,63 @@ h1 {
 
 select {
     display: block;
-    width: 78%;
     margin-top: 16px;
     font-size: 20px;
-    padding: 3px;
+    padding: 5px;
+    border-radius: 3px;
+    text-align-last: center;
+    width: 100%;
+}
+
+#results {
+    text-align: center;
+}
+
+.title {
+    color: #121212;
+    text-align: start;
+    width: 100%;
+    padding: 5px;
+}
+
+.card {
+    background-color: #efefef;
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+.time {
+    color: #121212;
+    text-align: end;
+    padding: 5px;
 }
 
 #selects {
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 652px) {
+    #selects {
+        width: 80%;
+    }
+    #results {
+        width: 100%;
+    }
+
+    #results div {
+        width: 100%;
+    }
 }
 
 a {
     color: #efefef;
+}
+.link a {
+    color: #121212;
+}
+
+.link {
+    text-align-last: center;
 }

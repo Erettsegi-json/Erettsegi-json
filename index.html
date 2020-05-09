@@ -47,15 +47,26 @@ function refresh(erettsegiJSON) {
 
     for (i = 0; i < erettsegiJSON.length; i++){
         if (("Bármikor" === times[timeSelect.selectedIndex] || erettsegiJSON[i].time === times[timeSelect.selectedIndex]) && ("Bármelyik szint" === levels[levelSelect.selectedIndex] || erettsegiJSON[i].level === levels[levelSelect.selectedIndex]) && ("Bármelyik tárgy" === subjects[subjectSelect.selectedIndex] || erettsegiJSON[i].subject === subjects[subjectSelect.selectedIndex])) {
+            var card = document.createElement("div");
+            card.className = "card";
+            var titleParagraph = document.createElement("p");
+            titleParagraph.className = "title";
+            titleParagraph.innerHTML = erettsegiJSON[i].level + " " + erettsegiJSON[i].subject;
+            card.appendChild(titleParagraph);
             for (let link of erettsegiJSON[i].links){
                 var linkElement = document.createElement("a");
-                var paragraph = document.createElement("p");
-                paragraph.appendChild(linkElement);
-                resdiv.appendChild(paragraph);
-
+                var linkParagraph = document.createElement("p");
+                linkParagraph.className = "link";
+                linkParagraph.appendChild(linkElement);
+                card.appendChild(linkParagraph);
                 linkElement.href = "http://oktatas.hu" + link;
-                linkElement.innerHTML = erettsegiJSON[i].time + " " + erettsegiJSON[i].level + " " + erettsegiJSON[i].subject + " " + link.substring(link.lastIndexOf("/")+1);
+                linkElement.innerHTML = link.substring(link.lastIndexOf("/")+1);
             }
+            var timeParagraph = document.createElement("p");
+            timeParagraph.className = "time";
+            timeParagraph.innerHTML = erettsegiJSON[i].time;
+            card.appendChild(timeParagraph);
+            resdiv.appendChild(card);
         }
     }
 }
