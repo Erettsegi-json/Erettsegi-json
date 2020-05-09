@@ -19,7 +19,7 @@ class Erettsegi:
         return self.time+self.subject+self.level
 
     def __lt__(self, other):
-        return self.time < other.time
+        return self.time > other.time
 
 
 def clear_tags(s):
