@@ -1,0 +1,30 @@
+body {
+    background-color: #01579B;
+    color: #efefef;
+    margin: 1em auto;
+    max-width: 40em;
+    font: 1.2em/1.62 Helvetica, Arial, sans-serif;
+    margin-top: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+select {
+    display: block;
+    width: 78%;
+    margin-top: 16px;
+    font-size: 20px;
+    padding: 3px;
+}
+
+#selects {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a {
+    color: #efefef;
+}
