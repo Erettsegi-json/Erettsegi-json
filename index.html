@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Érettségi</h1>
+    
+<select id="time"></select>
+<select id="level"></select>
+<select id="subject"></select>
+
+<div id="results">
+
+</div>
+</body>
+<script>
+let times = new Set();
+let levels = new Set();
+let subjects = new Set();    
+let timeSelect = document.getElementById("time");
+let levelSelect = document.getElementById("level");
+let subjectSelect = document.getElementById("subject");
+let resdiv = document.getElementById("results");
+
+let requestURL = 'https://raw.githubusercontent.com/boapps/erettsegi.boapps.hu/master/erettsegi.json';
+let request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'text';
+request.send();
+request.onload = function() {
+    const erettsegiResponse = request.response;
+    const erettsegiJSON = JSON.parse(erettsegiResponse);
+    setSelects(erettsegiJSON);
+}
+
+function refresh(erettsegiJSON) {
+    let results = Array();
+    resdiv.innerHTML = '';
+
+    for (i = 0; i < erettsegiJSON.length; i++){
+        if (("Bármikor" === times[timeSelect.selectedIndex] || erettsegiJSON[i].time === times[timeSelect.selectedIndex]) && ("Bármelyik szint" === levels[levelSelect.selectedIndex] || erettsegiJSON[i].level === levels[levelSelect.selectedIndex]) && ("Bármelyik tárgy" === subjects[subjectSelect.selectedIndex] || erettsegiJSON[i].subject === subjects[subjectSelect.selectedIndex])) {
+            for (let link of erettsegiJSON[i].links){
+                var linkElement = document.createElement("a");
+                var paragraph = document.createElement("p");
+                paragraph.appendChild(linkElement);
+                resdiv.appendChild(paragraph);
+
+                linkElement.href = "http://oktatas.hu" + link;
+                linkElement.innerHTML = erettsegiJSON[i].time + " " + erettsegiJSON[i].level + " " + erettsegiJSON[i].subject + " " + link.substring(link.lastIndexOf("/")+1);
+            }
+        }
+    }
+}
+
+function setSelects(erettsegiJSON) {
+    for (i = 0; i < erettsegiJSON.length; i++){
+        times.add(erettsegiJSON[i].time);
+        levels.add(erettsegiJSON[i].level);
+        subjects.add(erettsegiJSON[i].subject);
+    }
+    
+    times = Array.from(times).sort();
+    levels = Array.from(levels);
+    subjects = Array.from(subjects).sort();
+    
+    timeSelect.addEventListener('change', function() {
+        refresh(erettsegiJSON);
+    });
+    
+    
+    subjectSelect.addEventListener('change', function() {
+        refresh(erettsegiJSON);
+    });
+    
+    
+    levelSelect.addEventListener('change', function() {
+        refresh(erettsegiJSON);
+    });
+    
+    times.unshift("Bármikor");
+    for (let time of times) {
+        timeSelect.options.add(new Option(time, time));
+    }
+
+    levels.unshift("Bármelyik szint");
+    for (let level of levels) {
+        levelSelect.options.add(new Option(level, level));
+    }
+
+    subjects.unshift("Bármelyik tárgy");
+    for (let subject of subjects) {
+        subjectSelect.options.add(new Option(subject, subject));
+    }
+}
+</script>
+</html>
