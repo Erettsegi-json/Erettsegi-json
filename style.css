@@ -26,8 +26,17 @@ select {
     width: 100%;
 }
 
-table {
-    width: 100%;
+.column{
+    display: inline-flex;
+}
+
+.column div {
+    margin: 10px;
+}
+
+.column * {
+    color: #121212;
+    margin: 3px;
 }
 
 #results {
@@ -42,6 +51,10 @@ table {
     padding: 5px;
     margin: 0px;
     font-size: 23px;
+}
+
+.header {
+    font-weight: bold;
 }
 
 .card {
@@ -69,6 +82,13 @@ table {
     }
     #results div {
         width: 80%;
+        margin: 0 auto;
+    }
+    .column {
+        display: inline;
+    }
+    .header {
+        margin-top: 20px;
     }
 }
 

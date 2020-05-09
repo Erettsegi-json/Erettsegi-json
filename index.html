@@ -61,17 +61,24 @@ function refresh(erettsegiJSON) {
             titleParagraph.innerHTML = erettsegiJSON[i].level + " " + erettsegiJSON[i].subject;
             card.appendChild(titleParagraph);
             
-            var tbl = document.createElement('table');
-            tbl.setAttribute('border', '0');
-            var tbdy = document.createElement('tbody');
-            var tr = document.createElement('tr');
-            var left = document.createElement('td');
-            var right = document.createElement('td');
-            tbdy.appendChild(left);
-            tbdy.appendChild(right);
-            tbl.appendChild(tbdy);
-            card.appendChild(tbl)
+            let column = document.createElement("div");
+            column.className = "column";
+            
+            var left = document.createElement("div");
+            let leftHeader = document.createElement("p");
+            leftHeader.innerHTML = "feladat";
+            leftHeader.className = "header";
+            left.appendChild(leftHeader);
+            
+            var right = document.createElement("div");
+            let rightHeader = document.createElement("p");
+            rightHeader.innerHTML = "megoldás";
+            rightHeader.className = "header";
+            right.appendChild(rightHeader);
 
+            column.appendChild(left);
+            column.appendChild(right);
+            card.appendChild(column);
             for (let link of erettsegiJSON[i].links){
                 var linkElement = document.createElement("a");
                 var linkParagraph = document.createElement("p");
