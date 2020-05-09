@@ -35,6 +35,7 @@ let timeSelect = document.getElementById("time");
 let levelSelect = document.getElementById("level");
 let subjectSelect = document.getElementById("subject");
 let resdiv = document.getElementById("results");
+let url = new URL(window.location.href);
 let frequentSubjects = new Set(["angol nyelv", "biológia", "filozófia", "fizika", "földrajz", "informatika", "kémia", "magyar nyelv és irodalom", "matematika", "német nyelv", "rajz és vizuális kultúra", "spanyol nyelv", "történelem", "ének-zene"]);
 let requestURL = 'https://raw.githubusercontent.com/Erettsegi-json/Erettsegi-json/master/erettsegi.json';
 let request = new XMLHttpRequest();
@@ -45,11 +46,11 @@ request.onload = function() {
     const erettsegiResponse = request.response;
     const erettsegiJSON = JSON.parse(erettsegiResponse);
     setSelects(erettsegiJSON);
-    loadSettings();
+    refresh(erettsegiJSON);
 }
 
 function loadSettings() {
-    var url = new URL(window.location.href);
+    console.log(url.searchParams.has("time"));
     if (url.searchParams.has("time"))
         timeSelect.value = url.searchParams.get("time");
     if (url.searchParams.has("level"))
@@ -95,7 +96,6 @@ function refresh(erettsegiJSON) {
                 var linkParagraph = document.createElement("p");
                 linkParagraph.className = "link";
                 linkParagraph.appendChild(linkElement);
-                console.log(link.substring(link.lastIndexOf(".")-2, link.lastIndexOf(".")));
                 if (link.substring(link.lastIndexOf(".")-2, link.lastIndexOf(".")) === "fl")
                     left.appendChild(linkParagraph);
                 else
@@ -132,14 +132,20 @@ function setSelects(erettsegiJSON) {
 
     timeSelect.addEventListener('change', function() {
         refresh(erettsegiJSON);
+        url.searchParams.set("time", times[timeSelect.selectedIndex]);
+        window.history.pushState("", "", url.toString());
     });
 
     subjectSelect.addEventListener('change', function() {
         refresh(erettsegiJSON);
+        url.searchParams.set("subject", subjects[subjectSelect.selectedIndex]);
+        window.history.pushState("", "", url.toString());
     });
 
     levelSelect.addEventListener('change', function() {
         refresh(erettsegiJSON);
+        url.searchParams.set("level", levels[levelSelect.selectedIndex]);
+        window.history.pushState("", "", url.toString());
     });
 
     times.unshift("Bármikor");
@@ -156,6 +162,7 @@ function setSelects(erettsegiJSON) {
     for (let subject of subjects) {
         subjectSelect.options.add(new Option(subject, subject));
     }
+    loadSettings();
 }
 </script>
 </html>
