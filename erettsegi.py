@@ -84,14 +84,14 @@ def main():
             if not link.endswith('.pdf'):
                 erettsegik = getErettsegikPdf(link)
                 for subject in erettsegik:
-                    if (subject.strip() != '') and (time[:4] not in blacklist):
+                    if (subject.strip() != '') and (time[:4] not in blacklist) and (erettsegik[subject]):
                         erettsegi_list.append(Erettsegi(time, 'közép', subject, erettsegik[subject]))
 
         for link in erettsegi_linkek_emelt:
             if not link.endswith('.pdf'):
                 erettsegik = getErettsegikPdf(link)
                 for subject in erettsegik:
-                    if (subject.strip() != '') and (time[:4] not in blacklist):
+                    if (subject.strip() != '') and (time[:4] not in blacklist) and (erettsegik[subject]):
                         erettsegi_list.append(Erettsegi(time, 'emelt', subject, erettsegik[subject]))
 
         n += 1

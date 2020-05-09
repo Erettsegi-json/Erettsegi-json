@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<h1>Érettségi kereső</h1>
+<h1><a href="https://erettsegi.boapps.hu">Érettségi kereső</a></h1>
 <p id="description">mert az oktatas.hu nem embereknek készült</p>
 
 <div id="selects">
@@ -81,12 +81,14 @@ function refresh(erettsegiJSON) {
             leftHeader.innerHTML = "feladat";
             leftHeader.className = "header";
             left.appendChild(leftHeader);
+            let leftNumber = 0;
             
             var right = document.createElement("div");
             let rightHeader = document.createElement("p");
             rightHeader.innerHTML = "megoldás";
             rightHeader.className = "header";
             right.appendChild(rightHeader);
+            let rightNumber = 0;
 
             column.appendChild(left);
             column.appendChild(right);
@@ -96,13 +98,21 @@ function refresh(erettsegiJSON) {
                 var linkParagraph = document.createElement("p");
                 linkParagraph.className = "link";
                 linkParagraph.appendChild(linkElement);
-                if (link.substring(link.lastIndexOf(".")-2, link.lastIndexOf(".")) === "fl")
+                if (link.substring(link.lastIndexOf(".")-2, link.lastIndexOf(".")) === "fl") {
                     left.appendChild(linkParagraph);
-                else
+                    leftNumber++;
+                } else {
                     right.appendChild(linkParagraph);
+                    rightNumber++;
+                }
                 linkElement.href = "http://oktatas.hu" + link;
                 linkElement.innerHTML = link.substring(link.lastIndexOf("/")+1);
             }
+            if (leftNumber === 0)
+                left.innerHTML = "";
+            if (rightNumber === 0)
+                right.innerHTML = "";
+
             var timeParagraph = document.createElement("p");
             timeParagraph.className = "time";
             timeParagraph.innerHTML = erettsegiJSON[i].time;
