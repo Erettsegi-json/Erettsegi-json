@@ -15,6 +15,12 @@ class Erettsegi:
     def to_json(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
 
+    def __str__(self):
+        return self.time+self.subject+self.level
+
+    def __lt__(self, other):
+        return self.time < other.time
+
 
 def clear_tags(s):
     return re.sub(r"<[\w/=;\"\-#:\s]*>", "", s)
@@ -69,6 +75,7 @@ def main():
     okatas_response = requests.get('https://www.oktatas.hu/kozneveles/erettsegi/feladatsorok')
     oktatas_soup = bs4.BeautifulSoup(okatas_response.content, 'html.parser')
     erettsegi_list = list()
+    existing = list()
 
     n = 0
     for row in oktatas_soup.findAll('tr', {"class": "odd"}) + oktatas_soup.findAll('tr', {"class": "even"}):
@@ -83,19 +90,24 @@ def main():
             if not link.endswith('.pdf'):
                 erettsegik = getErettsegikPdf(link)
                 for subject in erettsegik:
-                    if (subject.strip() != '') and (time[:4] not in blacklist) and (len(erettsegik[subject]) > 0):
-                        erettsegi_list.append(Erettsegi(time, 'közép', subject, erettsegik[subject]))
+                    erettsegi = Erettsegi(time, 'közép', subject, erettsegik[subject])
+                    if (subject.strip() != '') and (time[:4] not in blacklist) and (len(erettsegik[subject]) > 0) and (str(erettsegi) not in existing):
+                        existing.append(str(erettsegi))
+                        erettsegi_list.append(erettsegi)
 
         for link in erettsegi_linkek_emelt:
             if not link.endswith('.pdf'):
                 erettsegik = getErettsegikPdf(link)
                 for subject in erettsegik:
-                    if (subject.strip() != '') and (time[:4] not in blacklist) and (len(erettsegik[subject]) > 0):
-                        erettsegi_list.append(Erettsegi(time, 'emelt', subject, erettsegik[subject]))
+                    erettsegi = Erettsegi(time, 'emelt', subject, erettsegik[subject])
+                    if (subject.strip() != '') and (time[:4] not in blacklist) and (len(erettsegik[subject]) > 0) and (str(erettsegi) not in existing):
+                        existing.append(str(erettsegi))
+                        erettsegi_list.append(erettsegi)
 
         n += 1
-        with open('erettsegi.json', 'w', encoding='utf8') as json_file:
-            json.dump(erettsegi_list, json_file, default=lambda o: o.__dict__, ensure_ascii=False)
+    erettsegi_list.sort()
+    with open('erettsegi.json', 'w', encoding='utf8') as json_file:
+        json.dump(erettsegi_list, json_file, default=lambda o: o.__dict__, ensure_ascii=False)
 
 
 if __name__ == '__main__':
