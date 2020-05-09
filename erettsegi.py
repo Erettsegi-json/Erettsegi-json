@@ -17,7 +17,7 @@ class Erettsegi:
 
 
 def clear_tags(s):
-    return re.sub(r"<[\w/]*>", "", s)
+    return re.sub(r"<[\w/=;\"\-:\s]*>", "", s)
 
 
 def getErettsegikPdf(path):
