@@ -5,10 +5,6 @@ from time import sleep
 import re
 
 
-def clear_tags(s):
-    return re.sub(r"<[\w/]*>", "", s)
-
-
 class Erettsegi:
     def __init__(self, time, level, subject, links):
         self.time = time.strip()
@@ -18,6 +14,10 @@ class Erettsegi:
 
     def to_json(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
+
+
+def clear_tags(s):
+    return re.sub(r"<[\w/]*>", "", s)
 
 
 def getErettsegikPdf(path):
@@ -33,17 +33,16 @@ def getErettsegikPdf(path):
         for row in table.tbody.findAll('tr'):
             if list(row.td.children):
                 if not row.td.find_all('a'):
-                    if clear_tags(str(list(row.td.children)[0])).strip() != "":
-                        if 'Vizsgatárgy' not in subject:
+                    if clear_tags(str(''.join([str(e) for e in row.td.children])).strip()).strip() != "":
+                        if ('Vizsgatárgy' not in subject) and links:
                             subject_dict[subject] = links.copy()
-                        subject = clear_tags(str(list(row.td.children)[0])).strip()
-
+                        subject = clear_tags(str(''.join([str(e) for e in row.td.children])).strip()).strip()
                         links.clear()
                         links += [link['href'] for link in row.find_all('a')]
                 else:
                     if 'Vizsgatárgy' not in subject:
                         links += [link['href'] for link in row.find_all('a')]
-        if 'Vizsgatárgy' not in subject:
+        if ('Vizsgatárgy' not in subject) and links:
             subject_dict[subject] = links
     return subject_dict
 
@@ -84,14 +83,14 @@ def main():
             if not link.endswith('.pdf'):
                 erettsegik = getErettsegikPdf(link)
                 for subject in erettsegik:
-                    if (subject.strip() != '') and (time[:4] not in blacklist) and (erettsegik[subject]):
+                    if (subject.strip() != '') and (time[:4] not in blacklist) and (len(erettsegik[subject]) > 0):
                         erettsegi_list.append(Erettsegi(time, 'közép', subject, erettsegik[subject]))
 
         for link in erettsegi_linkek_emelt:
             if not link.endswith('.pdf'):
                 erettsegik = getErettsegikPdf(link)
                 for subject in erettsegik:
-                    if (subject.strip() != '') and (time[:4] not in blacklist) and (erettsegik[subject]):
+                    if (subject.strip() != '') and (time[:4] not in blacklist) and (len(erettsegik[subject]) > 0):
                         erettsegi_list.append(Erettsegi(time, 'emelt', subject, erettsegik[subject]))
 
         n += 1
@@ -100,6 +99,7 @@ def main():
 
 
 if __name__ == '__main__':
+    #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2018tavasz/kozep_9nap')
     #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2019osz/kozep_10nap')
     #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/emelt_szint_2019osz/emelt_5nap')
     main()

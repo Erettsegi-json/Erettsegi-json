@@ -36,6 +36,7 @@ let levelSelect = document.getElementById("level");
 let subjectSelect = document.getElementById("subject");
 let resdiv = document.getElementById("results");
 let url = new URL(window.location.href);
+let resultsNumber = 0;
 let frequentSubjects = new Set(["angol nyelv", "biológia", "filozófia", "fizika", "földrajz", "informatika", "kémia", "magyar nyelv és irodalom", "matematika", "német nyelv", "rajz és vizuális kultúra", "spanyol nyelv", "történelem", "ének-zene"]);
 let requestURL = 'https://raw.githubusercontent.com/Erettsegi-json/Erettsegi-json/master/erettsegi.json';
 let request = new XMLHttpRequest();
@@ -46,7 +47,7 @@ request.onload = function() {
     const erettsegiResponse = request.response;
     const erettsegiJSON = JSON.parse(erettsegiResponse);
     setSelects(erettsegiJSON);
-    refresh(erettsegiJSON);
+    refresh(erettsegiJSON, 100);
 }
 
 function loadSettings() {
@@ -59,10 +60,10 @@ function loadSettings() {
         subjectSelect.value = url.searchParams.get("subject");
 }
 
-function refresh(erettsegiJSON) {
+function refresh(erettsegiJSON, maxLoad) {
     let results = Array();
     resdiv.innerHTML = '';
-    let resultsNumber = 0;
+    resultsNumber = 0;
     for (i = 0; i < erettsegiJSON.length; i++){
         if (("Bármikor" === times[timeSelect.selectedIndex] || erettsegiJSON[i].time === times[timeSelect.selectedIndex]) && ("Bármelyik szint" === levels[levelSelect.selectedIndex] || erettsegiJSON[i].level === levels[levelSelect.selectedIndex]) && ("Bármelyik tárgy" === subjects[subjectSelect.selectedIndex] || erettsegiJSON[i].subject === subjects[subjectSelect.selectedIndex])) {
             resultsNumber++;
@@ -118,8 +119,17 @@ function refresh(erettsegiJSON) {
             timeParagraph.innerHTML = erettsegiJSON[i].time;
             card.appendChild(timeParagraph);
             resdiv.appendChild(card);
-            if (resultsNumber > 100)
+            if (resultsNumber >= maxLoad){
+                console.log(resultsNumber);
+                console.log();
+                let moreBtn = document.createElement("button");
+                moreBtn.onclick = function(){
+                    refresh(erettsegiJSON, resultsNumber + 100);
+                };
+                moreBtn.innerHTML = "több";
+                resdiv.appendChild(moreBtn);
                 break;
+            }
         }
     }
     if (resultsNumber === 0) {
@@ -141,19 +151,19 @@ function setSelects(erettsegiJSON) {
     subjects = Array.from(frequentSubjects).concat(subjects);
 
     timeSelect.addEventListener('change', function() {
-        refresh(erettsegiJSON);
+        refresh(erettsegiJSON, 100);
         url.searchParams.set("time", times[timeSelect.selectedIndex]);
         window.history.pushState("", "", url.toString());
     });
 
     subjectSelect.addEventListener('change', function() {
-        refresh(erettsegiJSON);
+        refresh(erettsegiJSON, 100);
         url.searchParams.set("subject", subjects[subjectSelect.selectedIndex]);
         window.history.pushState("", "", url.toString());
     });
 
     levelSelect.addEventListener('change', function() {
-        refresh(erettsegiJSON);
+        refresh(erettsegiJSON, 100);
         url.searchParams.set("level", levels[levelSelect.selectedIndex]);
         window.history.pushState("", "", url.toString());
     });

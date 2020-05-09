@@ -113,6 +113,15 @@ footer {
     text-align: center;
 }
 
+button {
+    background-color: #00000000;
+    border: #efefef solid 2px;
+    font-size: 21px;
+    color: #efefef;
+    padding: 6px 32px 6px 32px;
+    border-radius: 3px;
+}
+
 footer * {
     display: inline;
 }
