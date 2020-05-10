@@ -105,7 +105,7 @@ def main():
             if not link.endswith('.pdf'):
                 erettsegik = getErettsegikPdf(link)
                 for subject in erettsegik:
-                    erettsegi = Erettsegi(time, 'közép', subject, erettsegik[subject])
+                    erettsegi = Erettsegi(time, 'k', subject, erettsegik[subject])
                     if (subject.strip() != '') and (time[:4] not in blacklist) and (len(erettsegik[subject]) > 0) and (str(erettsegi) not in existing):
                         existing.append(str(erettsegi))
                         erettsegi_list.append(erettsegi)
@@ -114,7 +114,7 @@ def main():
             if not link.endswith('.pdf'):
                 erettsegik = getErettsegikPdf(link)
                 for subject in erettsegik:
-                    erettsegi = Erettsegi(time, 'emelt', subject, erettsegik[subject])
+                    erettsegi = Erettsegi(time, 'e', subject, erettsegik[subject])
                     if (subject.strip() != '') and (time[:4] not in blacklist) and (len(erettsegik[subject]) > 0) and (str(erettsegi) not in existing):
                         existing.append(str(erettsegi))
                         erettsegi_list.append(erettsegi)
@@ -123,6 +123,11 @@ def main():
     erettsegi_list.sort()
     with open('erettsegi.json', 'w', encoding='utf8') as json_file:
         json.dump(erettsegi_list, json_file, default=lambda o: o.__dict__, ensure_ascii=False)
+
+    with open('erettsegi.txt', 'w', encoding='utf8') as txt_file:
+        for erettsegi in erettsegi_list:
+            txt_file.write(erettsegi.level + ';')
+
 
 
 if __name__ == '__main__':
