@@ -126,7 +126,7 @@ def main():
 
     with open('erettsegi.txt', 'w', encoding='utf8') as txt_file:
         for erettsegi in erettsegi_list:
-            txt_file.write(erettsegi.level + ';')
+            txt_file.write(';'.join([erettsegi.level, erettsegi.subject, erettsegi.time, ' '.join(erettsegi.links)]) + '\n')
 
 
 

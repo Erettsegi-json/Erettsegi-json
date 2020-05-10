@@ -40,8 +40,10 @@ let resultsNumber = 0;
 let levelDict = {"k": "közép", "e": "emelt"};
 let frequentSubjects = new Set(["angol nyelv", "biológia", "ének-zene", "filozófia", "fizika", "földrajz", "informatika", "kémia", "magyar nyelv és irodalom", "matematika", "német nyelv", "rajz és vizuális kultúra", "spanyol nyelv", "történelem"]);
 let requestURL = 'https://raw.githubusercontent.com/Erettsegi-json/Erettsegi-json/master/erettsegi.json';
+let requestUrlTxt = 'https://raw.githubusercontent.com/Erettsegi-json/Erettsegi-json/master/erettsegi.txt';
 let request = new XMLHttpRequest();
 request.open('GET', requestURL);
+//request.open('GET', requestUrlTxt);
 request.responseType = 'text';
 request.send();
 request.onload = function() {
@@ -49,6 +51,15 @@ request.onload = function() {
     const erettsegiJSON = JSON.parse(erettsegiResponse);
     setSelects(erettsegiJSON);
     refresh(erettsegiJSON, 100);
+}
+
+function parseTxt(txt) {
+    let erettsegiArray = new Array();
+    for (line of txt.split("\n")){
+        
+        //erettsegi = 
+        erettsegiArray.push();
+    }
 }
 
 function loadSettings() {
