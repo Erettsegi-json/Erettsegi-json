@@ -38,25 +38,33 @@ def getErettsegikPdf(path):
         links = list()
         for row in table.tbody.findAll('tr'):
             if list(row.td.children):
-                if not row.td.find_all('a'):
-                    if clear_tags(str(''.join([str(e) for e in row.td.children])).strip()).strip() != "":
-                        if ('Vizsgatárgy' not in subject) and links:
-                            subject_dict[subject] = links.copy()
-                        subject = clear_tags(str(''.join([str(e) for e in row.td.children])).strip()).strip()
-                        links.clear()
-                        links += [link['href'] for link in row.find_all('a')]
-                elif row.td.find('a').text == '':
-                    if clear_tags(str(''.join([str(e) for e in row.td.children])).strip()).strip() != "":
-                        if ('Vizsgatárgy' not in subject) and links:
-                            subject_dict[subject] = links.copy()
-                        subject = clear_tags(str(''.join([str(e) for e in row.td.children])).strip()).strip()
-                        links.clear()
-                        links += [link['href'] for link in row.find_all('a')]
-                else:
-                    if 'Vizsgatárgy' not in subject:
-                        links += [link['href'] for link in row.find_all('a')]
+                for e in row.td.children:
+                    found = False
+                    if not type(e) == bs4.element.NavigableString:
+                        if e.name == 'a':
+                            if e.string:
+                                if e.string.strip() != '':
+                                    found = True
+                        for a in e.find_all('a', recursive=True):
+                            if a.string:
+                                if a.string.strip() != '':
+                                    found = True
+                    if not found:
+                        if (e.name == 'p' or e.name == 'span' or type(e) == bs4.element.NavigableString) and e.string:
+                            if e.string.strip() != '':
+                                if e.string.strip() != subject:
+                                    if ('Vizsgatárgy' not in subject) and links:
+                                        subject_dict[subject] = links.copy()
+                                    subject = e.string.strip()
+                                    links.clear()
+            for a in row.find_all('a', recursive=True):
+                if a.string:
+                    if a.string.strip() != '':
+                        print(a['href'])
+                        links.append(a['href'])
         if ('Vizsgatárgy' not in subject) and links:
             subject_dict[subject] = links
+    print(subject_dict)
     return subject_dict
 
 
@@ -118,7 +126,7 @@ def main():
 
 
 if __name__ == '__main__':
-    #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/emelt_szint_2017tavasz/emelt_7nap')
+    #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2017tavasz/kozep_10nap')
     #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2018tavasz/kozep_9nap')
     #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2019osz/kozep_10nap')
     #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/emelt_szint_2019osz/emelt_5nap')
