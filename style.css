@@ -1,9 +1,9 @@
 body {
-    background-color: #01579B;
-    color: #efefef;
+    background-color: #eee;
+    color: #212121;
     margin: 1em auto;
     max-width: 40em;
-    font: 1.2em/1.62 Helvetica, Arial, sans-serif;
+    font: 1.2em/1.62 Cantarell, Helvetica, Arial, sans-serif;
     margin-top: 0px;
 }
 
@@ -62,10 +62,12 @@ select {
 }
 
 .card {
-    background-color: #efefef;
-    width: 600px;
-    margin: 0 auto;
-    border-radius: 3px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    padding: 1rem;
+    margin: 1rem auto;
 }
 
 .time {
@@ -97,7 +99,7 @@ select {
 }
 
 a {
-    color: #efefef;
+    color: #212121;
 }
 .link a {
     color: #121212;
