@@ -1,3 +1,228 @@
+k;artista ismeretek;2021. május-június;$_2021tavasz_kozep/k_artist_21maj_fl.pdf $_2021tavasz_kozep/k_artist_21maj_ut.pdf
+k;autó- és repülőgép-szerelési ismeretek;2021. május-június;$_2021tavasz_kozep/k_autorep_21maj_fl.pdf $_2021tavasz_kozep/k_autorep_21maj_ut.pdf
+k;automatikai és elektronikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_automat_21maj_fl.pdf $_2021tavasz_kozep/k_automat_21maj_ut.pdf
+k;egészségügyi ismeretek;2021. május-június;$_2021tavasz_kozep/k_egugy_21maj_fl.pdf $_2021tavasz_kozep/k_egugy_21maj_ut.pdf
+k;egészségügyi technikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_egugytech_21maj_fl.pdf $_2021tavasz_kozep/k_egugytech_21maj_ut.pdf
+k;egyházzenész-ismeretek;2021. május-június;$_2021tavasz_kozep/k_egyh_21maj_fl.pdf $_2021tavasz_kozep/k_egyh_21maj_ut.pdf
+k;élelmiszeripari gépésztechnikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_elelmgep_21maj_fl.pdf $_2021tavasz_kozep/k_elelmgep_21maj_ut.pdf
+k;élelmiszeripari ismeretek;2021. május-június;$_2021tavasz_kozep/k_elelm_21maj_fl.pdf $_2021tavasz_kozep/k_elelm_21maj_ut.pdf
+k;épületgépészeti ismeretek;2021. május-június;$_2021tavasz_kozep/k_epulgep_21maj_fl.pdf $_2021tavasz_kozep/k_epulgep_21maj_ut.pdf
+k;erdészeti és vadgazdálkodási ismeretek;2021. május-június;$_2021tavasz_kozep/k_erdvad_21maj_fl.pdf $_2021tavasz_kozep/k_erdvad_21maj_ut.pdf
+k;faipari ismeretek;2021. május-június;$_2021tavasz_kozep/k_faip_21maj_fl.pdf $_2021tavasz_kozep/k_faip_21maj_ut.pdf
+k;fodrászati ismeretek;2021. május-június;$_2021tavasz_kozep/k_fodraszati_21maj_fl.pdf $_2021tavasz_kozep/k_fodraszati_21maj_ut.pdf
+k;földmérési ismeretek;2021. május-június;$_2021tavasz_kozep/k_foldm_21maj_fl.pdf $_2021tavasz_kozep/k_foldm_21maj_ut.pdf
+k;gázipari és fluidumkitermelési ismeretek;2021. május-június;$_2021tavasz_kozep/k_gazipari_21maj_fl.pdf $_2021tavasz_kozep/k_gazipari_21maj_ut.pdf
+k;gépgyártás-technológiai ismeretek;2021. május-június;$_2021tavasz_kozep/k_gepgyartas_21maj_fl.pdf $_2021tavasz_kozep/k_gepgyartas_21maj_ut.pdf
+k;gyakorlatosszínész-ismeretek;2021. május-június;$_2021tavasz_kozep/k_gyakszin_21maj_fl.pdf $_2021tavasz_kozep/k_gyakszin_21maj_ut.pdf
+k;hajózási technikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_hajozasi_21maj_fl.pdf $_2021tavasz_kozep/k_hajozasi_21maj_ut.pdf
+k;hang-, film- és színháztechnikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_hang_21maj_fl.pdf $_2021tavasz_kozep/k_hang_21maj_ut.pdf $_2021tavasz_kozep/k_hangfor_21maj_fl.zip $_2021tavasz_kozep/k_hangmeg_21maj_ut.zip
+k;honvédelmi ismeretek;2021. május-június;$_2021tavasz_kozep/k_honvedelmi_21maj_fl.pdf $_2021tavasz_kozep/k_honvedelmi_21maj_ut.pdf
+k;idegennyelvű ügyviteli ismeretek;2021. május-június;$_2021tavasz_kozep/k_idnyeugyv_21maj_fl.pdf $_2021tavasz_kozep/k_idnyeugyv_21maj_ut.pdf
+k;informatikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_infoism_21maj_fl.pdf $_2021tavasz_kozep/k_infoism_21maj_ut.pdf $_2021tavasz_kozep/k_infoismfor_21maj_fl.zip $_2021tavasz_kozep/k_infoismmeg_21maj_ut.zip
+k;irodai ügyviteli ismeretek;2021. május-június;$_2021tavasz_kozep/k_irodaiugyv_21maj_fl.pdf $_2021tavasz_kozep/k_irodaiugyv_21maj_ut.pdf $_2021tavasz_kozep/k_irodugyfor_21maj_fl.zip $_2021tavasz_kozep/k_irodugymeg_21maj_ut.zip
+k;jazz-zenész-ismeretek;2021. május-június;$_2021tavasz_kozep/k_jazz_21maj_fl.pdf $_2021tavasz_kozep/k_jazz_21maj_ut.pdf
+k;képző- és iparművészeti ismeretek;2021. május-június;$_2021tavasz_kozep/k_kepz_21maj_fl.pdf $_2021tavasz_kozep/k_kepz_21maj_ut.pdf
+k;kereskedelmi ismeretek;2021. május-június;$_2021tavasz_kozep/k_ker_21maj_fl.pdf $_2021tavasz_kozep/k_ker_21maj_ut.pdf $_2021tavasz_kozep/k_kerang_21maj_fl.pdf $_2021tavasz_kozep/k_kerang_21maj_ut.pdf
+k;kertészeti és parképítési ismeretek;2021. május-június;$_2021tavasz_kozep/k_kert_21maj_fl.pdf $_2021tavasz_kozep/k_kert_21maj_ut.pdf
+k;kiadványszerkesztési ismeretek;2021. május-június;$_2021tavasz_kozep/k_kiadvszerk_21maj_fl.pdf $_2021tavasz_kozep/k_kiadvszerk_21maj_ut.pdf
+k;klasszikuszenész-ismeretek;2021. május-június;$_2021tavasz_kozep/k_klassz_21maj_fl.pdf $_2021tavasz_kozep/k_klassz_21maj_ut.pdf
+k;kozmetikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_kozmetikai_21maj_fl.pdf $_2021tavasz_kozep/k_kozmetikai_21maj_ut.pdf
+k;környezetvédelmi ismeretek;2021. május-június;$_2021tavasz_kozep/k_kornyved_21maj_fl.pdf $_2021tavasz_kozep/k_kornyved_21maj_ut.pdf
+k;közgazdasági ismeretek;2021. május-június;$_2021tavasz_kozep/k_kozg_21maj_fl.pdf $_2021tavasz_kozep/k_kozg_21maj_ut.pdf $_2021tavasz_kozep/k_kozgang_21maj_fl.pdf $_2021tavasz_kozep/k_kozgang_21maj_ut.pdf $_2021tavasz_kozep/k_kozgfra_21maj_fl.pdf $_2021tavasz_kozep/k_kozgfra_21maj_ut.pdf $_2021tavasz_kozep/k_kozgnem_21maj_fl.pdf $_2021tavasz_kozep/k_kozgnem_21maj_ut.pdf
+k;közlekedésautomatikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_kozlautmat_21maj_fl.pdf $_2021tavasz_kozep/k_kozlautmat_21maj_ut.pdf
+k;közművelődési ismeretek;2021. május-június;$_2021tavasz_kozep/k_kozmuv_21maj_fl.pdf $_2021tavasz_kozep/k_kozmuv_21maj_ut.pdf
+k;közúti és légi közlekedési, szállítmányozási és logisztikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_kozutilegi_21maj_fl.pdf $_2021tavasz_kozep/k_kozutilegi_21maj_ut.pdf
+k;magas- és mélyépítési ismeretek;2021. május-június;$_2021tavasz_kozep/k_magmelyep_21maj_fl.pdf $_2021tavasz_kozep/k_magmelyep_21maj_ut.pdf
+k;mechatronikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_mechatron_21maj_fl.pdf $_2021tavasz_kozep/k_mechatron_21maj_ut.pdf
+k;mezőgazdasági és erdészeti gépésztechnikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_mezerdgep_21maj_fl.pdf $_2021tavasz_kozep/k_mezerdgep_21maj_ut.pdf
+k;mezőgazdasági ismeretek;2021. május-június;$_2021tavasz_kozep/k_mezog_21maj_fl.pdf $_2021tavasz_kozep/k_mezog_21maj_ut.pdf
+k;népzenész-ismeretek;2021. május-június;$_2021tavasz_kozep/k_nepz_21maj_fl.pdf $_2021tavasz_kozep/k_nepz_21maj_ut.pdf
+k;nyomdaipari technikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_nyomd_21maj_fl.pdf $_2021tavasz_kozep/k_nyomd_21maj_ut.pdf
+k;optikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_opt_21maj_fl.pdf $_2021tavasz_kozep/k_opt_21maj_ut.pdf
+k;pedagógiai ismeretek;2021. május-június;$_2021tavasz_kozep/k_ped_21maj_fl.pdf $_2021tavasz_kozep/k_ped_21maj_ut.pdf
+k;postaforgalmi ismeretek;2021. május-június;$_2021tavasz_kozep/k_postaforg_21maj_fl.pdf $_2021tavasz_kozep/k_postaforg_21maj_ut.pdf
+k;rendészeti és közszolgálati ismeretek;2021. május-június;$_2021tavasz_kozep/k_rendkozsz_21maj_fl.pdf $_2021tavasz_kozep/k_rendkozsz_21maj_ut.pdf
+k;sport ismeretek;2021. május-június;$_2021tavasz_kozep/k_sport_21maj_fl.pdf $_2021tavasz_kozep/k_sport_21maj_ut.pdf
+k;szociális ismeretek;2021. május-június;$_2021tavasz_kozep/k_szoc_21maj_fl.pdf $_2021tavasz_kozep/k_szoc_21maj_ut.pdf
+k;szórakoztatózenész-ismeretek;2021. május-június;$_2021tavasz_kozep/k_szorak_21maj_fl.pdf $_2021tavasz_kozep/k_szorak_21maj_ut.pdf
+k;táncos ismeretek;2021. május-június;$_2021tavasz_kozep/k_tanc_21maj_fl.pdf $_2021tavasz_kozep/k_tanc_21maj_ut.pdf
+k;távközlési ismeretek;2021. május-június;$_2021tavasz_kozep/k_tavkozl_21maj_fl.pdf $_2021tavasz_kozep/k_tavkozl_21maj_ut.pdf $_2021tavasz_kozep/k_tavkozlmeg_21maj_ut.zip
+k;turisztikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_turiszt_21maj_fl.pdf $_2021tavasz_kozep/k_turiszt_21maj_ut.pdf $_2021tavasz_kozep/k_turisztang_21maj_fl.pdf $_2021tavasz_kozep/k_turisztang_21maj_ut.pdf $_2021tavasz_kozep/k_turisztnem_21maj_fl.pdf $_2021tavasz_kozep/k_turisztnem_21maj_ut.pdf
+k;út-, vasút- és hídépítési ismeretek;2021. május-június;$_2021tavasz_kozep/k_utvasuthid_21maj_fl.pdf $_2021tavasz_kozep/k_utvasuthid_21maj_ut.pdf
+k;vasútgépészeti ismeretek;2021. május-június;$_2021tavasz_kozep/k_vasutgep_21maj_fl.pdf $_2021tavasz_kozep/k_vasutgep_21maj_ut.pdf
+k;vasútüzemi közlekedési, szállítmányozási és logisztikai ismeretek;2021. május-június;$_2021tavasz_kozep/k_vasutuzemi_21maj_fl.pdf $_2021tavasz_kozep/k_vasutuzemi_21maj_ut.pdf
+k;vegyész ismeretek;2021. május-június;$_2021tavasz_kozep/k_vegy_21maj_fl.pdf $_2021tavasz_kozep/k_vegy_21maj_ut.pdf $_2021tavasz_kozep/k_vegyang_21maj_fl.pdf $_2021tavasz_kozep/k_vegyang_21maj_ut.pdf $_2021tavasz_kozep/k_vegynem_21maj_fl.pdf $_2021tavasz_kozep/k_vegynem_21maj_ut.pdf
+k;vegyipari ismeretek;2021. május-június;$_2021tavasz_kozep/k_vegyip_21maj_fl.pdf $_2021tavasz_kozep/k_vegyip_21maj_ut.pdf
+k;vendéglátóipari ismeretek;2021. május-június;$_2021tavasz_kozep/k_vend_21maj_fl.pdf $_2021tavasz_kozep/k_vend_21maj_ut.pdf
+k;vízügyi ismeretek;2021. május-június;$_2021tavasz_kozep/k_vizugyi_21maj_fl.pdf $_2021tavasz_kozep/k_vizugyi_21maj_ut.pdf
+k;angol nyelv;2021. május-június;$_2021tavasz_kozep/k_angol_21maj_fl.pdf $_2021tavasz_kozep/k_angol_21maj_ut.pdf $_2021tavasz_kozep/k_angol_21maj_fl.mp3
+k;horvát nemzetiségi nyelv és irodalom;2021. május-június;$_2021tavasz_kozep/k_horvatir_21maj_fl.pdf $_2021tavasz_kozep/k_horvatir_21maj_ut.pdf
+k;német nemzetiségi nyelv és irodalom;2021. május-június;$_2021tavasz_kozep/k_nnemetir_21maj_fl.pdf $_2021tavasz_kozep/k_nnemetir_21maj_ut.pdf
+k;román nemzetiségi nyelv és irodalom;2021. május-június;$_2021tavasz_kozep/k_romanir_21maj_fl.pdf $_2021tavasz_kozep/k_romanir_21maj_ut.pdf
+k;szerb nemzetiségi nyelv és irodalom;2021. május-június;$_2021tavasz_kozep/k_szerbir_21maj_fl.pdf $_2021tavasz_kozep/k_szerbir_21maj_ut.pdf
+k;szlovák nemzetiségi nyelv és irodalom;2021. május-június;$_2021tavasz_kozep/k_szlovakir_21maj_fl.pdf $_2021tavasz_kozep/k_szlovakir_21maj_ut.pdf
+k;ember- és társadalomismeret, etika - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_etarsetipr_21maj_ut.pdf
+k;emberismeret és etika - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_embetipr_21maj_ut.pdf
+k;gazdasági ismeretek - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_gazdispr_21maj_ut.pdf
+k;horvát nemzetiségi népismeret - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_horvnepismpr_21maj_ut.pdf
+k;mozgóképkultúra és médiaismeret - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_momedpr_21maj_ut.pdf
+k;német nemzetiségi népismeret - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_nnemnepismpr_21maj_ut.pdf
+k;roma/cigány nemzetiségi népismeret - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_rcnepismpr_21maj_ut.pdf
+k;román nemzetiségi népismeret - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_rnepismpr_21maj_ut.pdf
+k;szerb nemzetiségi népismeret - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_szenepismpr_21maj_ut.pdf
+k;szlovák nemzetiségi népismeret - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_szlonepismpr_21maj_ut.pdf
+k;társadalomismeret - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_tarspr_21maj_ut.pdf
+k;utazás és turizmus - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_uturizpr_21maj_ut.pdf
+k;vizuális kultúra - projekt készítése;2021. május-június;$_2021tavasz_kozep/k_vizupr_21maj_ut.pdf
+k;matematika;2021. május-június;$_2021tavasz_kozep/k_mat_21maj_fl.pdf $_2021tavasz_kozep/k_mat_21maj_ut.pdf
+k;matematika idegen nyelven;2021. május-június;$_2021tavasz_kozep/k_matma_21maj_fl.pdf $_2021tavasz_kozep/k_matma_21maj_ut.pdf $_2021tavasz_kozep/k_matang_21maj_fl.pdf $_2021tavasz_kozep/k_matang_21maj_ut.pdf $_2021tavasz_kozep/k_matfra_21maj_fl.pdf $_2021tavasz_kozep/k_matfra_21maj_ut.pdf $_2021tavasz_kozep/k_mathor_21maj_fl.pdf $_2021tavasz_kozep/k_mathor_21maj_ut.pdf $_2021tavasz_kozep/k_matnem_21maj_fl.pdf $_2021tavasz_kozep/k_matnem_21maj_ut.pdf $_2021tavasz_kozep/k_matol_21maj_fl.pdf $_2021tavasz_kozep/k_matol_21maj_ut.pdf $_2021tavasz_kozep/k_mator_21maj_fl.pdf $_2021tavasz_kozep/k_mator_21maj_ut.pdf $_2021tavasz_kozep/k_matrom_21maj_fl.pdf $_2021tavasz_kozep/k_matrom_21maj_ut.pdf $_2021tavasz_kozep/k_matspa_21maj_fl.pdf $_2021tavasz_kozep/k_matspa_21maj_ut.pdf $_2021tavasz_kozep/k_matsze_21maj_fl.pdf $_2021tavasz_kozep/k_matsze_21maj_ut.pdf $_2021tavasz_kozep/k_matszlo_21maj_fl.pdf $_2021tavasz_kozep/k_matszlo_21maj_ut.pdf
+k;fizika;2021. május-június;$_2021tavasz_kozep/k_fiz_21maj_fl.pdf $_2021tavasz_kozep/k_fiz_21maj_ut.pdf
+k;fizika idegen nyelven;2021. május-június;$_2021tavasz_kozep/k_fizma_21maj_fl.pdf $_2021tavasz_kozep/k_fizma_21maj_ut.pdf $_2021tavasz_kozep/k_fizang_21maj_fl.pdf $_2021tavasz_kozep/k_fizang_21maj_ut.pdf $_2021tavasz_kozep/k_fiznem_21maj_fl.pdf $_2021tavasz_kozep/k_fiznem_21maj_ut.pdf
+k;vizuális kultúra;2021. május-június;$_2021tavasz_kozep/k_vizu_21maj_fl.pdf $_2021tavasz_kozep/k_vizu_21maj_ut.pdf
+k;francia nyelv;2021. május-június;$_2021tavasz_kozep/k_francia_21maj_fl.pdf $_2021tavasz_kozep/k_francia_21maj_ut.pdf $_2021tavasz_kozep/k_francia_21maj_fl.mp3
+k;filozófia;2021. május-június;$_2021tavasz_kozep/k_filo_21maj_fl.pdf $_2021tavasz_kozep/k_filo_21maj_ut.pdf
+k;kémia;2021. május-június;$_2021tavasz_kozep/k_kem_21maj_fl.pdf $_2021tavasz_kozep/k_kem_21maj_ut.pdf
+k;kémia idegen nyelven;2021. május-június;$_2021tavasz_kozep/k_kemma_21maj_fl.pdf $_2021tavasz_kozep/k_kemma_21maj_ut.pdf $_2021tavasz_kozep/k_kemang_21maj_fl.pdf $_2021tavasz_kozep/k_kemang_21maj_ut.pdf $_2021tavasz_kozep/k_kemnem_21maj_fl.pdf $_2021tavasz_kozep/k_kemnem_21maj_ut.pdf
+k;földrajz;2021. május-június;$_2021tavasz_kozep/k_fldr_21maj_fl.pdf $_2021tavasz_kozep/k_fldr_21maj_ut.pdf
+k;földrajz idegen nyelven;2021. május-június;$_2021tavasz_kozep/k_fldrma_21maj_fl.pdf $_2021tavasz_kozep/k_fldrma_21maj_ut.pdf $_2021tavasz_kozep/k_fldrang_21maj_fl.pdf $_2021tavasz_kozep/k_fldrang_21maj_ut.pdf $_2021tavasz_kozep/k_fldrfra_21maj_fl.pdf $_2021tavasz_kozep/k_fldrfra_21maj_ut.pdf $_2021tavasz_kozep/k_fldrnem_21maj_fl.pdf $_2021tavasz_kozep/k_fldrnem_21maj_ut.pdf $_2021tavasz_kozep/k_fldrol_21maj_fl.pdf $_2021tavasz_kozep/k_fldrol_21maj_ut.pdf $_2021tavasz_kozep/k_fldrspa_21maj_fl.pdf $_2021tavasz_kozep/k_fldrspa_21maj_ut.pdf
+k;olasz nyelv;2021. május-június;$_2021tavasz_kozep/k_olasz_21maj_fl.pdf $_2021tavasz_kozep/k_olasz_21maj_ut.pdf $_2021tavasz_kozep/k_olasz_21maj_fl.mp3
+k;spanyol nyelv;2021. május-június;$_2021tavasz_kozep/k_spanyol_21maj_fl.pdf $_2021tavasz_kozep/k_spanyol_21maj_ut.pdf $_2021tavasz_kozep/k_spanyol_21maj_fl.mp3
+k;dráma;2021. május-június;$_2021tavasz_kozep/k_drama_21maj_fl.pdf $_2021tavasz_kozep/k_drama_21maj_ut.pdf
+k;mozgóképkultúra és médiaismeret;2021. május-június;$_2021tavasz_kozep/k_momed_21maj_fl.pdf $_2021tavasz_kozep/k_momed_21maj_ut.pdf
+k;német nyelv;2021. május-június;$_2021tavasz_kozep/k_nemet_21maj_fl.pdf $_2021tavasz_kozep/k_nemet_21maj_ut.pdf $_2021tavasz_kozep/k_nemet_21maj_fl.mp3
+k;magyar nyelv és irodalom;2021. május-június;$_2021tavasz_kozep/k_magyir_21maj_fl.pdf $_2021tavasz_kozep/k_magyir_21maj_ut.pdf
+k;magyar mint idegen nyelv;2021. május-június;$_2021tavasz_kozep/k_magyid_21maj_fl.pdf $_2021tavasz_kozep/k_magyid_21maj_ut.pdf $_2021tavasz_kozep/k_magyid_21maj_fl.mp3
+k;biológia;2021. május-június;$_2021tavasz_kozep/k_bio_21maj_fl.pdf $_2021tavasz_kozep/k_bio_21maj_ut.pdf
+k;biológia idegen nyelven;2021. május-június;$_2021tavasz_kozep/k_bioma_21maj_fl.pdf $_2021tavasz_kozep/k_bioma_21maj_ut.pdf $_2021tavasz_kozep/k_bioang_21maj_fl.pdf $_2021tavasz_kozep/k_bioang_21maj_ut.pdf
+k;történelem;2021. május-június;$_2021tavasz_kozep/k_tort_21maj_fl.pdf $_2021tavasz_kozep/k_tort_21maj_ut.pdf
+k;történelem idegen nyelven;2021. május-június;$_2021tavasz_kozep/k_tortma_21maj_fl.pdf $_2021tavasz_kozep/k_tortma_21maj_ut.pdf $_2021tavasz_kozep/k_tortang_21maj_fl.pdf $_2021tavasz_kozep/k_tortang_21maj_ut.pdf $_2021tavasz_kozep/k_tortfra_21maj_fl.pdf $_2021tavasz_kozep/k_tortfra_21maj_ut.pdf $_2021tavasz_kozep/k_torthor_21maj_fl.pdf $_2021tavasz_kozep/k_torthor_21maj_ut.pdf $_2021tavasz_kozep/k_tortnem_21maj_fl.pdf $_2021tavasz_kozep/k_tortnem_21maj_ut.pdf $_2021tavasz_kozep/k_tortol_21maj_fl.pdf $_2021tavasz_kozep/k_tortol_21maj_ut.pdf $_2021tavasz_kozep/k_tortor_21maj_fl.pdf $_2021tavasz_kozep/k_tortor_21maj_ut.pdf $_2021tavasz_kozep/k_tortrom_21maj_fl.pdf $_2021tavasz_kozep/k_tortrom_21maj_ut.pdf $_2021tavasz_kozep/k_tortspa_21maj_fl.pdf $_2021tavasz_kozep/k_tortspa_21maj_ut.pdf $_2021tavasz_kozep/k_tortsze_21maj_fl.pdf $_2021tavasz_kozep/k_tortsze_21maj_ut.pdf $_2021tavasz_kozep/k_tortszlo_21maj_fl.pdf $_2021tavasz_kozep/k_tortszlo_21maj_ut.pdf
+k;orosz nyelv;2021. május-június;$_2021tavasz_kozep/k_orosz_21maj_fl.pdf $_2021tavasz_kozep/k_orosz_21maj_ut.pdf $_2021tavasz_kozep/k_orosz_21maj_fl.mp3
+k;beás nyelv;2021. május-június;$_2021tavasz_kozep/k_beas_21maj_fl.pdf $_2021tavasz_kozep/k_beas_21maj_ut.pdf $_2021tavasz_kozep/k_beas_21maj_fl.mp3
+k;bolgár nyelv;2021. május-június;$_2021tavasz_kozep/k_bolgar_21maj_fl.pdf $_2021tavasz_kozep/k_bolgar_21maj_ut.pdf $_2021tavasz_kozep/k_bolgar_21maj_fl.mp3
+k;eszperantó nyelv;2021. május-június;$_2021tavasz_kozep/k_eszperanto_21maj_fl.pdf $_2021tavasz_kozep/k_eszperanto_21maj_ut.pdf $_2021tavasz_kozep/k_eszperanto_21maj_fl.mp3
+k;holland nyelv;2021. május-június;$_2021tavasz_kozep/k_holland_21maj_fl.pdf $_2021tavasz_kozep/k_holland_21maj_ut.pdf $_2021tavasz_kozep/k_holland_21maj_fl.mp3
+k;horvát nyelv;2021. május-június;$_2021tavasz_kozep/k_horvat_21maj_fl.pdf $_2021tavasz_kozep/k_horvat_21maj_ut.pdf $_2021tavasz_kozep/k_horvat_21maj_fl.mp3
+k;japán nyelv;2021. május-június;$_2021tavasz_kozep/k_japan_21maj_fl.pdf $_2021tavasz_kozep/k_japan_21maj_ut.pdf $_2021tavasz_kozep/k_japan_21maj_fl.mp3
+k;kínai nyelv;2021. május-június;$_2021tavasz_kozep/k_kinai_21maj_fl.pdf $_2021tavasz_kozep/k_kinai_21maj_ut.pdf $_2021tavasz_kozep/k_kinai_21maj_fl.mp3
+k;lengyel nyelv;2021. május-június;$_2021tavasz_kozep/k_lengyel_21maj_fl.pdf $_2021tavasz_kozep/k_lengyel_21maj_ut.pdf $_2021tavasz_kozep/k_lengyel_21maj_fl.mp3
+k;lovári nyelv;2021. május-június;$_2021tavasz_kozep/k_lovari_21maj_fl.pdf $_2021tavasz_kozep/k_lovari_21maj_ut.pdf $_2021tavasz_kozep/k_lovari_21maj_fl.mp3
+k;portugál nyelv;2021. május-június;$_2021tavasz_kozep/k_portugal_21maj_fl.pdf $_2021tavasz_kozep/k_portugal_21maj_ut.pdf $_2021tavasz_kozep/k_portugal_21maj_fl.mp3
+k;román nyelv;2021. május-június;$_2021tavasz_kozep/k_roman_21maj_fl.pdf $_2021tavasz_kozep/k_roman_21maj_ut.pdf $_2021tavasz_kozep/k_roman_21maj_fl.mp3
+k;szerb nyelv;2021. május-június;$_2021tavasz_kozep/k_szerb_21maj_fl.pdf $_2021tavasz_kozep/k_szerb_21maj_ut.pdf $_2021tavasz_kozep/k_szerb_21maj_fl.mp3
+k;szlovák nyelv;2021. május-június;$_2021tavasz_kozep/k_szlovak_21maj_fl.pdf $_2021tavasz_kozep/k_szlovak_21maj_ut.pdf $_2021tavasz_kozep/k_szlovak_21maj_fl.mp3
+k;szlovén nyelv;2021. május-június;$_2021tavasz_kozep/k_szloven_21maj_fl.pdf $_2021tavasz_kozep/k_szloven_21maj_ut.pdf $_2021tavasz_kozep/k_szloven_21maj_fl.mp3
+k;újgörög nyelv;2021. május-június;$_2021tavasz_kozep/k_ujgorog_21maj_fl.pdf $_2021tavasz_kozep/k_ujgorog_21maj_ut.pdf $_2021tavasz_kozep/k_ujgorog_21maj_fl.mp3
+k;katonai alapismeretek;2021. május-június;$_2021tavasz_kozep/k_katism_21maj_fl.pdf $_2021tavasz_kozep/k_katism_21maj_ut.pdf
+k;pszichológia;2021. május-június;$_2021tavasz_kozep/k_pszichologia_21maj_fl.pdf $_2021tavasz_kozep/k_pszichologia_21maj_ut.pdf
+k;természettudomány;2021. május-június;$_2021tavasz_kozep/k_termtud_21maj_fl.pdf $_2021tavasz_kozep/k_termtud_21maj_ut.pdf
+k;latin nyelv;2021. május-június;$_2021tavasz_kozep/k_latin_21maj_fl.pdf $_2021tavasz_kozep/k_latin_21maj_ut.pdf
+k;héber nyelv;2021. május-június;$_2021tavasz_kozep/k_heber_21maj_fl.pdf $_2021tavasz_kozep/k_heber_21maj_ut.pdf $_2021tavasz_kozep/Heber_nyelv_K2011.mp3
+k;informatika;2021. május-június;$_2021tavasz_kozep/k_inf_21maj_fl.pdf $_2021tavasz_kozep/k_inf_21maj_ut.pdf $_2021tavasz_kozep/k_inffor_21maj_fl.zip $_2021tavasz_kozep/k_inf_21maj_ut.xlsx $_2021tavasz_kozep/k_infmeg_21maj_ut.zip
+k;informatika idegen nyelven;2021. május-június;$_2021tavasz_kozep/k_infma_21maj_fl.pdf $_2021tavasz_kozep/k_infma_21maj_ut.pdf $_2021tavasz_kozep/k_infmafor_21maj_fl.zip $_2021tavasz_kozep/k_infma_21maj_ut.xlsx $_2021tavasz_kozep/k_infmameg_21maj_ut.zip $_2021tavasz_kozep/k_infang_21maj_fl.pdf $_2021tavasz_kozep/k_infang_21maj_ut.pdf $_2021tavasz_kozep/k_infangfor_21maj_fl.zip $_2021tavasz_kozep/k_infang_21maj_ut.xlsx $_2021tavasz_kozep/k_infangmeg_21maj_ut.zip $_2021tavasz_kozep/k_inffra_21maj_fl.pdf $_2021tavasz_kozep/k_inffra_21maj_ut.pdf $_2021tavasz_kozep/k_inffrafor_21maj_fl.zip $_2021tavasz_kozep/k_inffra_21maj_ut.xlsx $_2021tavasz_kozep/k_infframeg_21maj_ut.zip $_2021tavasz_kozep/k_infhor_21maj_fl.pdf $_2021tavasz_kozep/k_infhor_21maj_ut.pdf $_2021tavasz_kozep/k_infhorfor_21maj_fl.zip $_2021tavasz_kozep/k_infhor_21maj_ut.xlsx $_2021tavasz_kozep/k_infhormeg_21maj_ut.zip $_2021tavasz_kozep/k_infnem_21maj_fl.pdf $_2021tavasz_kozep/k_infnem_21maj_ut.pdf $_2021tavasz_kozep/k_infnemfor_21maj_fl.zip $_2021tavasz_kozep/k_infnem_21maj_ut.xlsx $_2021tavasz_kozep/k_infnemmeg_21maj_ut.zip $_2021tavasz_kozep/k_infrom_21maj_fl.pdf $_2021tavasz_kozep/k_infrom_21maj_ut.pdf $_2021tavasz_kozep/k_infromfor_21maj_fl.zip $_2021tavasz_kozep/k_infrom_21maj_ut.xlsx $_2021tavasz_kozep/k_infrommeg_21maj_ut.zip $_2021tavasz_kozep/k_infspa_21maj_fl.pdf $_2021tavasz_kozep/k_infspa_21maj_ut.pdf $_2021tavasz_kozep/k_infspafor_21maj_fl.zip $_2021tavasz_kozep/k_infspa_21maj_ut.xlsx $_2021tavasz_kozep/k_infspameg_21maj_ut.zip $_2021tavasz_kozep/k_infsze_21maj_fl.pdf $_2021tavasz_kozep/k_infsze_21maj_ut.pdf $_2021tavasz_kozep/k_infszefor_21maj_fl.zip $_2021tavasz_kozep/k_infsze_21maj_ut.xlsx $_2021tavasz_kozep/k_infszemeg_21maj_ut.zip
+k;belügyi rendészeti ismeretek;2021. május-június;$_2021tavasz_kozep/k_belrendism_21maj_fl.pdf $_2021tavasz_kozep/k_belrendism_21maj_ut.pdf
+k;ének-zene;2021. május-június;$_2021tavasz_kozep/k_enekzene_21maj_fl.pdf $_2021tavasz_kozep/k_enekzene_21maj_ut.pdf $_2021tavasz_kozep/k_enekzenenem_21maj_fl.pdf $_2021tavasz_kozep/k_enekzenenem_21maj_ut.pdf
+k;művészettörténet;2021. május-június;$_2021tavasz_kozep/k_muvtort_21maj_fl.pdf $_2021tavasz_kozep/k_muvtort_21maj_ut.pdf
+e;horvát nemzetiségi nyelv és irodalom;2021. május-június;$_2021tavasz_emelt/e_horvatir_21maj_fl.pdf $_2021tavasz_emelt/e_horvatir_21maj_ut.pdf
+e;német nemzetiségi nyelv és irodalom;2021. május-június;$_2021tavasz_emelt/e_nnemetir_21maj_fl.pdf $_2021tavasz_emelt/e_nnemetir_21maj_ut.pdf
+e;szerb nemzetiségi nyelv és irodalom;2021. május-június;$_2021tavasz_emelt/e_szerbir_21maj_fl.pdf $_2021tavasz_emelt/e_szerbir_21maj_ut.pdf
+e;szlovák nemzetiségi nyelv és irodalom;2021. május-június;$_2021tavasz_emelt/e_szlovakir_21maj_fl.pdf $_2021tavasz_emelt/e_szlovakir_21maj_ut.pdf
+e;olasz nyelv;2021. május-június;$_2021tavasz_emelt/e_olasz_21maj_fl.pdf $_2021tavasz_emelt/e_olasz_21maj_ut.pdf $_2021tavasz_emelt/e_olasz_21maj_fl.mp3
+e;francia nyelv;2021. május-június;$_2021tavasz_emelt/e_francia_21maj_fl.pdf $_2021tavasz_emelt/e_francia_21maj_ut.pdf $_2021tavasz_emelt/e_francia_21maj_fl.mp3
+e;filozófia;2021. május-június;$_2021tavasz_emelt/e_filo_21maj_fl.pdf $_2021tavasz_emelt/e_filo_21maj_ut.pdf
+e;belügyi rendészeti ismeretek;2021. május-június;$_2021tavasz_emelt/e_belrendism_21maj_fl.pdf $_2021tavasz_emelt/e_belrendism_21maj_ut.pdf
+e;ének-zene;2021. május-június;$_2021tavasz_emelt/e_enekzene_21maj_fl.pdf $_2021tavasz_emelt/e_enekzene_21maj_ut.pdf
+e;autó- és repülőgép-szerelési ismeretek;2021. május-június;$_2021tavasz_emelt/e_autorep_21maj_fl.pdf $_2021tavasz_emelt/e_autorep_21maj_ut.pdf
+e;automatikai és elektronikai ismeretek;2021. május-június;$_2021tavasz_emelt/e_automat_21maj_fl.pdf $_2021tavasz_emelt/e_automat_21maj_ut.pdf
+e;egészségügyi ismeretek;2021. május-június;$_2021tavasz_emelt/e_egugy_21maj_fl.pdf $_2021tavasz_emelt/e_egugy_21maj_ut.pdf
+e;élelmiszeripari gépésztechnikai ismeretek;2021. május-június;$_2021tavasz_emelt/e_elelmgep_21maj_fl.pdf $_2021tavasz_emelt/e_elelmgep_21maj_ut.pdf
+e;élelmiszeripari ismeretek;2021. május-június;$_2021tavasz_emelt/e_elelm_21maj_fl.pdf $_2021tavasz_emelt/e_elelm_21maj_ut.pdf
+e;épületgépészeti ismeretek;2021. május-június;$_2021tavasz_emelt/e_epulgep_21maj_fl.pdf $_2021tavasz_emelt/e_epulgep_21maj_ut.pdf
+e;erdészeti és vadgazdálkodási ismeretek;2021. május-június;$_2021tavasz_emelt/e_erdvad_21maj_fl.pdf $_2021tavasz_emelt/e_erdvad_21maj_ut.pdf
+e;faipari ismeretek;2021. május-június;$_2021tavasz_emelt/e_faip_21maj_fl.pdf $_2021tavasz_emelt/e_faip_21maj_ut.pdf
+e;földmérési ismeretek;2021. május-június;$_2021tavasz_emelt/e_foldm_21maj_fl.pdf $_2021tavasz_emelt/e_foldm_21maj_ut.pdf
+e;gépgyártás-technológiai ismeretek;2021. május-június;$_2021tavasz_emelt/e_gepgyartas_21maj_fl.pdf $_2021tavasz_emelt/e_gepgyartas_21maj_ut.pdf
+e;hajózási technikai ismeretek;2021. május-június;$_2021tavasz_emelt/e_hajozasi_21maj_fl.pdf $_2021tavasz_emelt/e_hajozasi_21maj_ut.pdf
+e;hang-, film- és színháztechnikai ismeretek;2021. május-június;$_2021tavasz_emelt/e_hang_21maj_fl.pdf $_2021tavasz_emelt/e_hang_21maj_ut.pdf $_2021tavasz_emelt/e_hangfor_21maj_fl.zip $_2021tavasz_emelt/e_hangmeg_21maj_ut.zip
+e;honvédelmi ismeretek;2021. május-június;$_2021tavasz_emelt/e_honvedelmi_21maj_fl.pdf $_2021tavasz_emelt/e_honvedelmi_21maj_ut.pdf
+e;idegennyelvű ügyviteli ismeretek;2021. május-június;$_2021tavasz_emelt/e_idnyeugyv_21maj_fl.pdf $_2021tavasz_emelt/e_idnyeugyv_21maj_ut.pdf
+e;informatikai ismeretek;2021. május-június;$_2021tavasz_emelt/e_infoism_21maj_fl.pdf $_2021tavasz_emelt/e_infoism_21maj_ut.pdf $_2021tavasz_emelt/e_infoismfor_21maj_fl.zip $_2021tavasz_emelt/e_infoismmeg_21maj_ut.zip
+e;irodai ügyviteli ismeretek;2021. május-június;$_2021tavasz_emelt/e_irodaiugyv_21maj_fl.pdf $_2021tavasz_emelt/e_irodaiugyv_21maj_ut.pdf $_2021tavasz_emelt/e_irodugyfor_21maj_fl.zip $_2021tavasz_emelt/e_irodugymeg_21maj_ut.zip
+e;képző- és iparművészeti ismeretek;2021. május-június;$_2021tavasz_emelt/e_kepz_21maj_fl.pdf $_2021tavasz_emelt/e_kepz_21maj_ut.pdf
+e;kereskedelmi ismeretek;2021. május-június;$_2021tavasz_emelt/e_ker_21maj_fl.pdf $_2021tavasz_emelt/e_ker_21maj_ut.pdf $_2021tavasz_emelt/e_kerang_21maj_fl.pdf $_2021tavasz_emelt/e_kerang_21maj_ut.pdf
+e;kertészeti és parképítési ismeretek;2021. május-június;$_2021tavasz_emelt/e_kert_21maj_fl.pdf $_2021tavasz_emelt/e_kert_21maj_ut.pdf
+e;kiadványszerkesztési ismeretek;2021. május-június;$_2021tavasz_emelt/e_kiadvszerk_21maj_fl.pdf $_2021tavasz_emelt/e_kiadvszerk_21maj_ut.pdf
+e;klasszikuszenész-ismeretek;2021. május-június;$_2021tavasz_emelt/e_klassz_21maj_fl.pdf $_2021tavasz_emelt/e_klassz_21maj_ut.pdf
+e;könnyűipari ismeretek;2021. május-június;$_2021tavasz_emelt/e_konyip_21maj_fl.pdf $_2021tavasz_emelt/e_konyip_21maj_ut.pdf
+e;környezetvédelmi ismeretek;2021. május-június;$_2021tavasz_emelt/e_kornyved_21maj_fl.pdf $_2021tavasz_emelt/e_kornyved_21maj_ut.pdf
+e;közgazdasági ismeretek;2021. május-június;$_2021tavasz_emelt/e_kozg_21maj_fl.pdf $_2021tavasz_emelt/e_kozg_21maj_ut.pdf $_2021tavasz_emelt/e_kozgang_21maj_fl.pdf $_2021tavasz_emelt/e_kozgang_21maj_ut.pdf
+e;közlekedésautomatikai ismeretek;2021. május-június;$_2021tavasz_emelt/e_kozlautmat_21maj_fl.pdf $_2021tavasz_emelt/e_kozlautmat_21maj_ut.pdf
+e;közúti és légi közlekedési, szállítmányozási és logisztikai ismeretek;2021. május-június;$_2021tavasz_emelt/e_kozutilegi_21maj_fl.pdf $_2021tavasz_emelt/e_kozutilegi_21maj_ut.pdf
+e;magas- és mélyépítési ismeretek;2021. május-június;$_2021tavasz_emelt/e_magmelyep_21maj_fl.pdf $_2021tavasz_emelt/e_magmelyep_21maj_ut.pdf
+e;mechatronikai ismeretek;2021. május-június;$_2021tavasz_emelt/e_mechatron_21maj_fl.pdf $_2021tavasz_emelt/e_mechatron_21maj_ut.pdf
+e;mezőgazdasági és erdészeti gépésztechnikai ismeretek;2021. május-június;$_2021tavasz_emelt/e_mezerdgep_21maj_fl.pdf $_2021tavasz_emelt/e_mezerdgep_21maj_ut.pdf
+e;mezőgazdasági ismeretek;2021. május-június;$_2021tavasz_emelt/e_mezog_21maj_fl.pdf $_2021tavasz_emelt/e_mezog_21maj_ut.pdf
+e;népzenész-ismeretek;2021. május-június;$_2021tavasz_emelt/e_nepz_21maj_fl.pdf $_2021tavasz_emelt/e_nepz_21maj_ut.pdf
+e;nyomdaipari technikai ismeretek;2021. május-június;$_2021tavasz_emelt/e_nyomd_21maj_fl.pdf $_2021tavasz_emelt/e_nyomd_21maj_ut.pdf
+e;pedagógiai ismeretek;2021. május-június;$_2021tavasz_emelt/e_ped_21maj_fl.pdf $_2021tavasz_emelt/e_ped_21maj_ut.pdf
+e;postaforgalmi ismeretek;2021. május-június;$_2021tavasz_emelt/e_postaforg_21maj_fl.pdf $_2021tavasz_emelt/e_postaforg_21maj_ut.pdf
+e;rendészeti és közszolgálati ismeretek;2021. május-június;$_2021tavasz_emelt/e_rendkozsz_21maj_fl.pdf $_2021tavasz_emelt/e_rendkozsz_21maj_ut.pdf
+e;sport ismeretek;2021. május-június;$_2021tavasz_emelt/e_sport_21maj_fl.pdf $_2021tavasz_emelt/e_sport_21maj_ut.pdf
+e;szociális ismeretek;2021. május-június;$_2021tavasz_emelt/e_szoc_21maj_fl.pdf $_2021tavasz_emelt/e_szoc_21maj_ut.pdf
+e;táncos ismeretek;2021. május-június;$_2021tavasz_emelt/e_tanc_21maj_fl.pdf $_2021tavasz_emelt/e_tanc_21maj_ut.pdf
+e;távközlési ismeretek;2021. május-június;$_2021tavasz_emelt/e_tavkozl_21maj_fl.pdf $_2021tavasz_emelt/e_tavkozl_21maj_ut.pdf $_2021tavasz_emelt/e_tavkozlfor_21maj_fl.zip $_2021tavasz_emelt/e_tavkozlmeg_21maj_ut.zip
+e;turisztikai ismeretek;2021. május-június;$_2021tavasz_emelt/e_turiszt_21maj_fl.pdf $_2021tavasz_emelt/e_turiszt_21maj_ut.pdf $_2021tavasz_emelt/e_turisztang_21maj_fl.pdf $_2021tavasz_emelt/e_turisztang_21maj_ut.pdf $_2021tavasz_emelt/e_turisztnem_21maj_fl.pdf $_2021tavasz_emelt/e_turisztnem_21maj_ut.pdf
+e;út-, vasút- és hídépítési ismeretek;2021. május-június;$_2021tavasz_emelt/e_utvasuthid_21maj_fl.pdf $_2021tavasz_emelt/e_utvasuthid_21maj_ut.pdf
+e;vasútgépészeti  ismeretek;2021. május-június;$_2021tavasz_emelt/e_vasutgep_21maj_fl.pdf $_2021tavasz_emelt/e_vasutgep_21maj_ut.pdf
+e;vasútüzemi közlekedési, szállítmányozási és logisztikai ismeretek;2021. május-június;$_2021tavasz_emelt/e_vasutuzemi_21maj_fl.pdf $_2021tavasz_emelt/e_vasutuzemi_21maj_ut.pdf
+e;vegyész ismeretek;2021. május-június;$_2021tavasz_emelt/e_vegy_21maj_fl.pdf $_2021tavasz_emelt/e_vegy_21maj_ut.pdf
+e;vegyipari ismeretek;2021. május-június;$_2021tavasz_emelt/e_vegyip_21maj_fl.pdf $_2021tavasz_emelt/e_vegyip_21maj_ut.pdf
+e;vendéglátóipari ismeretek;2021. május-június;$_2021tavasz_emelt/e_vend_21maj_fl.pdf $_2021tavasz_emelt/e_vend_21maj_ut.pdf
+e;vízügyi ismeretek;2021. május-június;$_2021tavasz_emelt/e_vizugyi_21maj_fl.pdf $_2021tavasz_emelt/e_vizugyi_21maj_ut.pdf
+e;biológia;2021. május-június;$_2021tavasz_emelt/e_bio_21maj_fl.pdf $_2021tavasz_emelt/e_bio_21maj_ut.pdf
+e;biológia idegen nyelven;2021. május-június;$_2021tavasz_emelt/e_bioma_21maj_fl.pdf $_2021tavasz_emelt/e_bioma_21maj_ut.pdf $_2021tavasz_emelt/e_bioang_21maj_fl.pdf $_2021tavasz_emelt/e_bioang_21maj_ut.pdf $_2021tavasz_emelt/e_biosze_21maj_fl.pdf $_2021tavasz_emelt/e_biosze_21maj_ut.pdf
+e;társadalomismeret;2021. május-június;$_2021tavasz_emelt/e_tars_21maj_fl.pdf $_2021tavasz_emelt/e_tars_21maj_ut.pdf
+e;angol nyelv;2021. május-június;$_2021tavasz_emelt/e_angol_21maj_fl.pdf $_2021tavasz_emelt/e_angol_21maj_ut.pdf $_2021tavasz_emelt/e_angol_21maj_fl.mp3
+e;informatika;2021. május-június;$_2021tavasz_emelt/e_inf_21maj_fl.pdf $_2021tavasz_emelt/e_inf_21maj_ut.pdf $_2021tavasz_emelt/e_inffor_21maj_fl.zip $_2021tavasz_emelt/e_inf_21maj_ut.xlsx $_2021tavasz_emelt/e_infmeg_21maj_ut.zip
+e;informatika idegen nyelven;2021. május-június;$_2021tavasz_emelt/e_infma_21maj_fl.pdf $_2021tavasz_emelt/e_infma_21maj_ut.pdf $_2021tavasz_emelt/e_infmafor_21maj_fl.zip $_2021tavasz_emelt/e_infma_21maj_ut.xlsx $_2021tavasz_emelt/e_infmameg_21maj_ut.zip $_2021tavasz_emelt/e_infang_21maj_fl.pdf $_2021tavasz_emelt/e_infang_21maj_ut.pdf $_2021tavasz_emelt/e_infangfor_21maj_fl.zip $_2021tavasz_emelt/e_infang_21maj_ut.xlsx $_2021tavasz_emelt/e_infangmeg_21maj_ut.zip $_2021tavasz_emelt/e_infnem_21maj_fl.pdf $_2021tavasz_emelt/e_infnem_21maj_ut.pdf $_2021tavasz_emelt/e_infnemfor_21maj_fl.zip $_2021tavasz_emelt/e_infnem_21maj_ut.xlsx $_2021tavasz_emelt/e_infnemmeg_21maj_ut.zip
+e;latin nyelv;2021. május-június;$_2021tavasz_emelt/e_latin_21maj_fl.pdf $_2021tavasz_emelt/e_latin_21maj_ut.pdf
+e;héber nyelv;2021. május-június;$_2021tavasz_emelt/e_heber_21maj_fl.pdf $_2021tavasz_emelt/e_heber_21maj_ut.pdf $_2021tavasz_emelt/e_heber_21maj_fl.mp3
+e;spanyol nyelv;2021. május-június;$_2021tavasz_emelt/e_spanyol_21maj_fl.pdf $_2021tavasz_emelt/e_spanyol_21maj_ut.pdf $_2021tavasz_emelt/e_spanyol_21maj_fl.mp3
+e;dráma;2021. május-június;$_2021tavasz_emelt/e_drama_21maj_fl.pdf $_2021tavasz_emelt/e_drama_21maj_ut.pdf
+e;mozgóképkultúra és médiaismeret;2021. május-június;$_2021tavasz_emelt/e_momed_21maj_fl.pdf $_2021tavasz_emelt/e_momed_21maj_ut.pdf
+e;orosz nyelv;2021. május-június;$_2021tavasz_emelt/e_orosz_21maj_fl.pdf $_2021tavasz_emelt/e_orosz_21maj_ut.pdf $_2021tavasz_emelt/e_orosz_21maj_fl.mp3
+e;beás nyelv;2021. május-június;$_2021tavasz_emelt/e_beas_21maj_fl.pdf $_2021tavasz_emelt/e_beas_21maj_ut.pdf $_2021tavasz_emelt/e_beas_21maj_fl.mp3
+e;bolgár nyelv;2021. május-június;$_2021tavasz_emelt/e_bolgar_21maj_fl.pdf $_2021tavasz_emelt/e_bolgar_21maj_ut.pdf $_2021tavasz_emelt/e_bolgar_21maj_fl.mp3
+e;finn nyelv;2021. május-június;$_2021tavasz_emelt/e_finn_21maj_fl.pdf $_2021tavasz_emelt/e_finn_21maj_ut.pdf $_2021tavasz_emelt/e_finn_21maj_fl.mp3
+e;holland nyelv;2021. május-június;$_2021tavasz_emelt/e_holland_21maj_fl.pdf $_2021tavasz_emelt/e_holland_21maj_ut.pdf $_2021tavasz_emelt/e_holland_21maj_fl.mp3
+e;horvát nyelv;2021. május-június;$_2021tavasz_emelt/e_horvat_21maj_fl.pdf $_2021tavasz_emelt/e_horvat_21maj_ut.pdf $_2021tavasz_emelt/e_horvat_21maj_fl.mp3
+e;japán nyelv;2021. május-június;$_2021tavasz_emelt/e_japan_21maj_fl.pdf $_2021tavasz_emelt/e_japan_21maj_ut.pdf $_2021tavasz_emelt/e_japan_21maj_fl.mp3
+e;kínai nyelv;2021. május-június;$_2021tavasz_emelt/e_kinai_21maj_fl.pdf $_2021tavasz_emelt/_kinai_21maj_ut.pdf $_2021tavasz_emelt/e_kinai_21maj_fl.mp3
+e;lengyel nyelv;2021. május-június;$_2021tavasz_emelt/e_lengyel_21maj_fl.pdf $_2021tavasz_emelt/e_lengyel_21maj_ut.pdf $_2021tavasz_emelt/e_lengyel_21maj_fl.mp3
+e;lovári nyelv;2021. május-június;$_2021tavasz_emelt/e_lovari_21maj_fl.pdf $_2021tavasz_emelt/e_lovari_21maj_ut.pdf $_2021tavasz_emelt/e_lovari_21maj_fl.mp3
+e;portugál nyelv;2021. május-június;$_2021tavasz_emelt/e_portugal_21maj_fl.pdf $_2021tavasz_emelt/e_portugal_21maj_ut.pdf $_2021tavasz_emelt/e_portugal_21maj_fl.mp3
+e;román nyelv;2021. május-június;$_2021tavasz_emelt/e_roman_21maj_fl.pdf $_2021tavasz_emelt/e_roman_21maj_ut.pdf $_2021tavasz_emelt/e_roman_21maj_fl.mp3
+e;szerb nyelv;2021. május-június;$_2021tavasz_emelt/e_szerb_21maj_fl.pdf $_2021tavasz_emelt/e_szerb_21maj_ut.pdf $_2021tavasz_emelt/e_szerb_21maj_fl.mp3
+e;szlovák nyelv;2021. május-június;$_2021tavasz_emelt/e_szlovak_21maj_fl.pdf $_2021tavasz_emelt/e_szlovak_21maj_ut.pdf $_2021tavasz_emelt/e_szlovak_21maj_fl.mp3
+e;szlovén nyelv;2021. május-június;$_2021tavasz_emelt/e_szloven_21maj_fl.pdf $_2021tavasz_emelt/e_szloven_21maj_ut.pdf $_2021tavasz_emelt/e_szloven_21maj_fl.mp3
+e;ukrán nyelv;2021. május-június;$_2021tavasz_emelt/e_ukran_21maj_fl.pdf $_2021tavasz_emelt/e_ukran_21maj_ut.pdf $_2021tavasz_emelt/e_ukran_21maj_fl.mp3
+e;újgörög nyelv;2021. május-június;$_2021tavasz_emelt/e_ujgorog_21maj_fl.pdf $_2021tavasz_emelt/e_ujgorog_21maj_ut.pdf $_2021tavasz_emelt/e_ujgorog_21maj_fl.mp3
+e;gazdasági ismeretek (II. változat);2021. május-június;$_2021tavasz_emelt/e_gazdism2_21maj_fl.pdf $_2021tavasz_emelt/e_gazdism2_21maj_ut.pdf
+e;katonai alapismeretek;2021. május-június;$_2021tavasz_emelt/e_katism_21maj_fl.pdf $_2021tavasz_emelt/e_katism_21maj_ut.pdf
+e;magyar nyelv és irodalom;2021. május-június;$_2021tavasz_emelt/e_magyir_21maj_fl.pdf $_2021tavasz_emelt/e_magyir_21maj_ut.pdf
+e;gazdasági ismeretek - projekt készítése;2021. május-június;$_2021tavasz_emelt/e_gazdispr_21maj_ut.pdf
+e;mozgóképkultúra és médiaismeret - projekt készítése;2021. május-június;$_2021tavasz_emelt/e_momedpr_21maj_ut.pdf
+e;német nyelv;2021. május-június;$_2021tavasz_emelt/e_nemet_21maj_fl.pdf $_2021tavasz_emelt/e_nemet_21maj_ut.pdf $_2021tavasz_emelt/e_nemet_21maj_fl.mp3
+e;kémia;2021. május-június;$_2021tavasz_emelt/e_kem_21maj_fl.pdf $_2021tavasz_emelt/e_kem_21maj_ut.pdf
+e;kémia idegen nyelven;2021. május-június;$_2021tavasz_emelt/e_kemma_21maj_fl.pdf $_2021tavasz_emelt/e_kemma_21maj_ut.pdf $_2021tavasz_emelt/e_kemang_21maj_fl.pdf $_2021tavasz_emelt/e_kemang_21maj_ut.pdf
+e;földrajz;2021. május-június;$_2021tavasz_emelt/e_fldr_21maj_fl.pdf $_2021tavasz_emelt/e_fldr_21maj_ut.pdf
+e;földrajz idegen nyelven;2021. május-június;$_2021tavasz_emelt/e_fldrma_21maj_fl.pdf $_2021tavasz_emelt/e_fldrma_21maj_ut.pdf $_2021tavasz_emelt/e_fldrang_21maj_fl.pdf $_2021tavasz_emelt/e_fldrang_21maj_ut.pdf
+e;fizika;2021. május-június;$_2021tavasz_emelt/e_fiz_21maj_fl.pdf $_2021tavasz_emelt/e_fiz_21maj_ut.pdf
+e;fizika idegen nyelven;2021. május-június;$_2021tavasz_emelt/e_fizma_21maj_fl.pdf $_2021tavasz_emelt/e_fizma_21maj_ut.pdf $_2021tavasz_emelt/e_fizang_21maj_fl.pdf $_2021tavasz_emelt/e_fizang_21maj_ut.pdf $_2021tavasz_emelt/e_fizspa_21maj_fl.pdf $_2021tavasz_emelt/e_fizspa_21maj_ut.pdf
+e;vizuális kultúra;2021. május-június;$_2021tavasz_emelt/e_vizu_21maj_fl.pdf $_2021tavasz_emelt/e_vizu_21maj_ut.pdf
+e;matematika;2021. május-június;$_2021tavasz_emelt/e_mat_21maj_fl.pdf $_2021tavasz_emelt/e_mat_21maj_ut.pdf
+e;matematika idegen nyelven;2021. május-június;$_2021tavasz_emelt/e_matma_21maj_fl.pdf $_2021tavasz_emelt/e_matma_21maj_ut.pdf $_2021tavasz_emelt/e_matang_21maj_fl.pdf $_2021tavasz_emelt/e_matang_21maj_ut.pdf $_2021tavasz_emelt/e_matfra_21maj_fl.pdf $_2021tavasz_emelt/e_matfra_21maj_ut.pdf $_2021tavasz_emelt/e_matnem_21maj_fl.pdf $_2021tavasz_emelt/e_matnem_21maj_ut.pdf $_2021tavasz_emelt/e_matspa_21maj_fl.pdf $_2021tavasz_emelt/e_matspa_21maj_ut.pdf $_2021tavasz_emelt/e_matsze_21maj_fl.pdf $_2021tavasz_emelt/e_matsze_21maj_ut.pdf
+e;történelem;2021. május-június;$_2021tavasz_emelt/e_tort_21maj_fl.pdf $_2021tavasz_emelt/e_tort_21maj_ut.pdf
+e;történelem idegen nyelven;2021. május-június;$_2021tavasz_emelt/e_tortma_21maj_fl.pdf $_2021tavasz_emelt/e_tortma_21maj_ut.pdf $_2021tavasz_emelt/e_tortang_21maj_fl.pdf $_2021tavasz_emelt/e_tortang_21maj_ut.pdf $_2021tavasz_emelt/e_tortfra_21maj_fl.pdf $_2021tavasz_emelt/e_tortfra_21maj_ut.pdf $_2021tavasz_emelt/e_torthor_21maj_fl.pdf $_2021tavasz_emelt/e_torthor_21maj_ut.pdf $_2021tavasz_emelt/e_tortnem_21maj_fl.pdf $_2021tavasz_emelt/e_tortnem_21maj_ut.pdf $_2021tavasz_emelt/e_tortspa_21maj_fl.pdf $_2021tavasz_emelt/e_tortspa_21maj_ut.pdf $_2021tavasz_emelt/e_tortsze_21maj_fl.pdf $_2021tavasz_emelt/e_tortsze_21maj_ut.pdf $_2021tavasz_emelt/e_tortszlo_21maj_fl.pdf $_2021tavasz_emelt/e_tortszlo_21maj_ut.pdf
 k;magyar nyelv és irodalom;2020. május-június;$_2020tavasz_kozep/k_magyir_20maj_fl.pdf $_2020tavasz_kozep/k_magyir_20maj_ut.pdf
 k;magyar mint idegen nyelv;2020. május-június;$_2020tavasz_kozep/k_magyid_20maj_fl.pdf $_2020tavasz_kozep/k_magyid_20maj_ut.pdf $_2020tavasz_kozep/k_magyid_20maj_fl.mp3
 k;artista ismeretek;2020. május-június;$_2020tavasz_kozep/k_artist_20maj_fl.pdf $_2020tavasz_kozep/k_artist_20maj_ut.pdf
