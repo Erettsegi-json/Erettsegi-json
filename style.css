@@ -117,12 +117,23 @@ footer {
 }
 
 button {
-    background-color: #00000000;
     border: #efefef solid 2px;
-    font-size: 21px;
-    color: #efefef;
+    font-size: 27px;
+    color: #212121;
     padding: 6px 32px 6px 32px;
     border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.02), 0 2px 2px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    border-radius: 8px;
+    margin: 1.2rem auto;
+}
+
+button:hover {
+    color: #01579B;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,.02), 0 5px 5px rgba(0,0,0,.05);
+
 }
 
 footer * {
