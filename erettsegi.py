@@ -28,66 +28,83 @@ def clear_tags(s):
 
 def getErettsegikPdf(path):
     sleep(0.5)
-    response = requests.get('https://www.oktatas.hu' + path)
-    soup = bs4.BeautifulSoup(response.content, 'html.parser')
-    tables = soup.find_all('table', {'class': 'stripped'})
-    subject_dict = dict()
+    n = 1
+    while True:
+        try:
+            response = requests.get('https://www.oktatas.hu' + path)
+            soup = bs4.BeautifulSoup(response.content, 'html.parser')
+            tables = soup.find_all('table', {'class': 'stripped'})
+            subject_dict = dict()
 
-    for table in tables:
-        subject = 'Vizsgatárgy'
-        links = list()
-        for row in table.tbody.findAll('tr'):
-            if list(row.td.children):
-                for e in row.td.children:
-                    found = False
-                    if not type(e) == bs4.element.NavigableString:
-                        if e.name == 'a':
-                            if e.string:
-                                if e.string.strip() != '':
-                                    found = True
-                        for a in e.find_all('a', recursive=True):
-                            if a.string:
-                                if a.string.strip() != '':
-                                    found = True
-                    if not found:
-                        if (e.name == 'p' or e.name == 'span' or type(e) == bs4.element.NavigableString) and e.string:
-                            if e.string.strip() != '':
-                                if e.string.strip() != subject:
-                                    if ('Vizsgatárgy' not in subject) and links:
-                                        subject_dict[subject] = links.copy()
-                                    subject = e.string.strip()
-                                    links.clear()
-            for a in row.find_all('a', recursive=True):
-                if a.string:
-                    if a.string.strip() != '':
-                        print(a['href'])
-                        links.append(a['href'])
-        if ('Vizsgatárgy' not in subject) and links:
-            subject_dict[subject] = links
-    print(subject_dict)
-    return subject_dict
+            for table in tables:
+                subject = 'Vizsgatárgy'
+                links = list()
+                for row in table.tbody.findAll('tr'):
+                    if list(row.td.children):
+                        for e in row.td.children:
+                            found = False
+                            if not type(e) == bs4.element.NavigableString:
+                                if e.name == 'a':
+                                    if e.string:
+                                        if e.string.strip() != '':
+                                            found = True
+                                for a in e.find_all('a', recursive=True):
+                                    if a.string:
+                                        if a.string.strip() != '':
+                                            found = True
+                            if not found:
+                                if (e.name == 'p' or e.name == 'span' or type(e) == bs4.element.NavigableString) and e.string:
+                                    if e.string.strip() != '':
+                                        if e.string.strip() != subject:
+                                            if ('Vizsgatárgy' not in subject) and links:
+                                                subject_dict[subject] = links.copy()
+                                            subject = e.string.strip()
+                                            links.clear()
+                    for a in row.find_all('a', recursive=True):
+                        if a.string:
+                            if a.string.strip() != '':
+                                print(a['href'])
+                                links.append(a['href'])
+                if ('Vizsgatárgy' not in subject) and links:
+                    subject_dict[subject] = links
+            print(subject_dict)
+            return subject_dict
+
+            break
+        except Exception as e:
+            print(e)
+            sleep(n)
+            n += 10
 
 
 def getErettsegik(path):
-    response = requests.get('https://www.oktatas.hu' + path)
-    print(path)
-    links = set()
-    soup = bs4.BeautifulSoup(response.content, 'html.parser')
-    if soup.find('table', {'class': 'stripped'}):
-        table = soup.find('table', {'class': 'stripped'}).tbody
-        for row in table.findAll('tr'):
-            for data in row.findAll('td'):
-                if data.a:
-                    links.add(data.findAll('a')[0]['href'])
+    n = 1
+    while True:
+        try:
+            response = requests.get('https://www.oktatas.hu' + path)
+            print(path)
+            links = set()
+            soup = bs4.BeautifulSoup(response.content, 'html.parser')
+            if soup.find('table', {'class': 'stripped'}):
+                table = soup.find('table', {'class': 'stripped'}).tbody
+                for row in table.findAll('tr'):
+                    for data in row.findAll('td'):
+                        if data.a:
+                            links.add(data.findAll('a')[0]['href'])
 
-    return links
+            return links
+        except Exception as e:
+            print(e)
+            sleep(n)
+            n += 10
 
 
 blacklist = ['2012', '2011', '2010', '2009', '2008', '2007', '2006', '2005']
 
 
 def main():
-    okatas_response = requests.get('https://www.oktatas.hu/kozneveles/erettsegi/feladatsorok')
+    okatas_response = requests.get(
+        'https://www.oktatas.hu/kozneveles/erettsegi/feladatsorok')
     oktatas_soup = bs4.BeautifulSoup(okatas_response.content, 'html.parser')
     erettsegi_list = list()
     existing = list()
@@ -95,7 +112,10 @@ def main():
     n = 0
     for row in oktatas_soup.findAll('tr', {"class": "odd"}) + oktatas_soup.findAll('tr', {"class": "even"}):
         print('n:', n)
-        time = list(row.td.children)[0]
+        time = list(row.td.children)[0].text
+        print('time')
+        print(time)
+        print(row.td.text)
         kozep, emelt = tuple(row.td.find_next_siblings('td'))
         kozep_link, emelt_link = kozep.a['href'], emelt.a['href']
         erettsegi_linkek_kozep = getErettsegik(kozep_link)
@@ -105,7 +125,8 @@ def main():
             if not link.endswith('.pdf'):
                 erettsegik = getErettsegikPdf(link)
                 for subject in erettsegik:
-                    erettsegi = Erettsegi(time, 'k', subject, erettsegik[subject])
+                    erettsegi = Erettsegi(
+                        time, 'k', subject, erettsegik[subject])
                     if (subject.strip() != '') and (time[:4] not in blacklist) and (len(erettsegik[subject]) > 0) and (str(erettsegi) not in existing):
                         existing.append(str(erettsegi))
                         erettsegi_list.append(erettsegi)
@@ -114,7 +135,8 @@ def main():
             if not link.endswith('.pdf'):
                 erettsegik = getErettsegikPdf(link)
                 for subject in erettsegik:
-                    erettsegi = Erettsegi(time, 'e', subject, erettsegik[subject])
+                    erettsegi = Erettsegi(
+                        time, 'e', subject, erettsegik[subject])
                     if (subject.strip() != '') and (time[:4] not in blacklist) and (len(erettsegik[subject]) > 0) and (str(erettsegi) not in existing):
                         existing.append(str(erettsegi))
                         erettsegi_list.append(erettsegi)
@@ -122,17 +144,18 @@ def main():
         n += 1
     erettsegi_list.sort()
     with open('erettsegi.json', 'w', encoding='utf8') as json_file:
-        json.dump(erettsegi_list, json_file, default=lambda o: o.__dict__, ensure_ascii=False)
+        json.dump(erettsegi_list, json_file,
+                  default=lambda o: o.__dict__, ensure_ascii=False)
 
     with open('erettsegi.txt', 'w', encoding='utf8') as txt_file:
         for erettsegi in erettsegi_list:
-            txt_file.write(';'.join([erettsegi.level, erettsegi.subject, erettsegi.time, ' '.join([str(link).replace('/bin/content/dload/erettsegi/feladatok', '$') for link in erettsegi.links])]) + '\n')
-
+            txt_file.write(';'.join([erettsegi.level, erettsegi.subject, erettsegi.time, ' '.join(
+                [str(link).replace('/bin/content/dload/erettsegi/feladatok', '$') for link in erettsegi.links])]) + '\n')
 
 
 if __name__ == '__main__':
-    #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2017tavasz/kozep_10nap')
-    #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2018tavasz/kozep_9nap')
-    #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2019osz/kozep_10nap')
-    #getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/emelt_szint_2019osz/emelt_5nap')
+    # getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2017tavasz/kozep_10nap')
+    # getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2018tavasz/kozep_9nap')
+    # getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/kozepszint_2019osz/kozep_10nap')
+    # getErettsegikPdf('/kozneveles/erettsegi/feladatsorok/emelt_szint_2019osz/emelt_5nap')
     main()
