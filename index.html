@@ -38,17 +38,17 @@ let subjectSelect = document.getElementById("subject");
 let resdiv = document.getElementById("results");
 let url = new URL(window.location.href);
 let resultsNumber = 0;
-let levelDict = {"k": "közép", "e": "emelt"};
+let levelDict = {"kozepszint": "közép", "emeltszint": "emelt"};
 let frequentSubjects = new Set(["angol nyelv", "biológia", "ének-zene", "filozófia", "fizika", "földrajz", "informatika", "kémia", "magyar nyelv és irodalom", "matematika", "német nyelv", "rajz és vizuális kultúra", "spanyol nyelv", "történelem"]);
 
-let requestUrlTxt = 'https://raw.githubusercontent.com/Erettsegi-json/Erettsegi-json/master/erettsegi.txt';
+let requestUrlTxt = 'https://raw.githubusercontent.com/Erettsegi-json/Erettsegi-json/master/processed_links.csv';
 let request = new XMLHttpRequest();
 request.open('GET', requestUrlTxt);
 request.responseType = 'text';
 request.send();
 request.onload = function() {
     const erettsegiResponse = request.responseText;
-    console.log(erettsegiResponse);
+    //console.log(erettsegiResponse);
     const erettsegiArray = parseTxt(erettsegiResponse);
     setSelects(erettsegiArray);
     refresh(erettsegiArray, 100);
@@ -56,13 +56,13 @@ request.onload = function() {
 
 function parseTxt(txt) {
     let erettsegiArray = new Array();
-    for (line of txt.split("\n")){
+    for (line of txt.split("\n")) {
         let splitLine = line.split(";");
-        if (splitLine.length === 4){
-            let level = levelDict[splitLine[0]];
+        if (splitLine.length === 5) {
+            let level = splitLine[0];
             let subject = splitLine[1];
-            let time = splitLine[2];
-            let links = splitLine[3].split(' ');
+            let time = splitLine[2] + ' ' + splitLine[3];
+            let links = splitLine[4].split(' ');
             let erettsegi = {
                 "level": level,
                 "subject": subject,
@@ -133,7 +133,7 @@ function refresh(erettsegiArray, maxLoad) {
                     right.appendChild(linkParagraph);
                     rightNumber++;
                 }
-                linkElement.href = "http://dload.oktatas.educatio.hu/" + link.replace('$', '/erettsegi/feladatok');
+                linkElement.href = link;
                 linkElement.innerHTML = link.substring(link.lastIndexOf("/")+1);
             }
             if (leftNumber === 0)
