@@ -33,5 +33,16 @@ jobs:
     - name: Run Python script
       run: python process.py
 
+    - name: Configure Git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Add data
+      run: git add day.csv && git commit -m "add new data"
+
     - name: Push data
-      run: git add day.csv && git commit -m "add new data" && git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git push
