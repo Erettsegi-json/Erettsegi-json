@@ -1,0 +1,18 @@
+name: erettsegi
+start_url: "https://www.oktatas.hu/kozneveles/erettsegi/feladatsorok"
+output_formats: [csv]
+delay:
+  time: 1000
+pages:
+- name: main
+  url: '^https://www\.oktatas\.hu/kozneveles/erettsegi/feladatsorok$'
+  links: ['td > a'] # links to visit on page (css selector)
+- name: period_level
+  url: '^https://www\.oktatas\.hu/kozneveles/erettsegi/feladatsorok/[\w\d_\-]+$'
+  links: ['td a'] # links to visit on page (css selector)
+- name: day
+  url: '^https://www\.oktatas\.hu/kozneveles/erettsegi/feladatsorok/([\w\d_\-]+/[\w\d_\-]+|emelt_szint_2005oktober|emelt_szint_2006februar|emelt_szint_2006oktober|emelt_szint_2007oktober|emelt_szint_2008majus|emelt_szint_2008oktober|emelt_szint_2009majus|emelt_szint_2009oktober|emelt_szint_2010majus|emelt_szint_2010oktober|emelt_szint_2011tavasz|emelt_szint_2012tavasz|kozepszint_2006februar|kozepszint_2007majus|kozepszint_2007oktober|kozepszint_2008majus|kozepszint_2008oktober|kozepszint_2009majus|kozepszint_2009oktober|kozepszint_2010majus|kozepszint_2010oktober|kozepszint_2011tavasz|kozepszint_2012tavasz)$'
+  # the above abomination is thanks to oktatas.hu maintainers deciding the website design should be different on totally random periods, there is no pattern here
+  multi_row: true
+  columns:
+    - {name: url, xpath: "//td//a/@href"}
