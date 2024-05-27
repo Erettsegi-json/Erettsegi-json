@@ -39,7 +39,7 @@ jobs:
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
     - name: Add data
-      run: git add day.csv && git commit -m "add new data"
+      run: git add day.csv processed.csv processed_links.csv && git commit -m "add new data"
 
     - name: Push data
       env:
